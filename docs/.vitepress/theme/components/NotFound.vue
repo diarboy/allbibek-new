@@ -82,9 +82,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
   .hero-right {
     order: 2; 
-    margin: -50px 0 -50px 0;
-    transform:translateX(100px);
-    overflow: hidden;
+    margin: 0 0 -50px 0;
   }
 }
 
