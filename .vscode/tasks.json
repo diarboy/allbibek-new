@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start VitePress",
+      "type": "shell",
+      "command": "npm install && npm run docs:dev",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
+      "dependsOn": ["Open Browser"]
+    },
+    {
+      "label": "Open Browser",
+      "type": "shell",
+      "command": "start http://localhost:5173",
+      "problemMatcher": [],
+      "group": {
+        "kind": "none"
+      }
+    }
+  ]
+}
