@@ -1,0 +1,176 @@
+@import url('https://api.fontshare.com/v2/css?f=manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+    --hero-text-gradient-light: linear-gradient(120deg, #bd34fe, #41d1ff);
+    --hero-text-gradient-dark: linear-gradient(120deg, white 10%, #41d1ff);
+    /* --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #4c09b9 50%); original */
+    --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #41d1ff 50%);
+    --vp-home-hero-image-filter: blur(40px);
+    --vp-button-brand-bg: #1f9fa2;
+    }
+    
+   .VPNavBarTitle {
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    
+    html.dark .VPNavBar title {
+      color: white;
+    }
+
+    html.light .VPNavBar .title {
+      color: black;
+    }
+
+  @media (max-width: 768px) { 
+    .VPNavBar .title {
+        font-size: 1.25rem;
+    }
+  }
+
+    .VPHomeHero .name {
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 2.5rem; 
+      font-weight: 900;
+	    line-height: 1.5;
+      color: white;
+  }
+
+  .VPHomeHero .text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: transparent;
+    background: var(--hero-text-gradient-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+  }
+
+  html.dark .VPHomeHero .text {
+    background: var(--hero-text-gradient-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+  }
+  
+  @media (max-width: 768px) {
+    .VPHomeHero .text {
+      font-size: 2.5rem; 
+    }
+  }
+
+  /* body {
+    font-family: 'Inter', sans-serif;
+  } */
+
+  h1, h2, h3, h4, h5, h6,
+  div[class*="vp-doc"] h1, 
+  div[class*="vp-doc"] h2, 
+  div[class*="vp-doc"] h3, 
+  div[class*="vp-doc"] h4, 
+  div[class*="vp-doc"] h5, 
+  div[class*="vp-doc"] h6 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+  }
+
+  /* h1, div[class*="vp-doc"] h1 {
+    background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+
+  /* h2, div[class*="vp-doc"] h2 {
+    background: -webkit-linear-gradient(120deg, #ffab91, #FF70A6, #667eea);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+
+  .title {
+    background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* background: -webkit-linear-gradient(315deg, #a1c4fd, #c2e9fb); blue */
+  /* background: -webkit-linear-gradient(315deg, #9d50bb, #6e48aa); purple */
+  /* background: -webkit-linear-gradient(315deg, #f6d365, #fda085); gold */
+  
+  .subtitle {
+    background: -webkit-linear-gradient(315deg, #9d50bb, #6e48aa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .VPImage.image-src {
+    max-width: unset;
+    max-height: unset;
+    width: 540px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .VPImage.image-src {
+      width: 280px;
+      height:auto;
+    }
+  }
+
+  @media (min-width: 640px) {
+    :root {
+      --vp-home-hero-image-filter: blur(56px);
+    }
+  }
+  
+  @media (min-width: 960px) {
+    :root {
+      --vp-home-hero-image-filter: blur(72px);
+    }
+  }
+
+  .VPFeature {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .VPFeature:hover {
+    transform: translateY(-2px);
+  }
+  
+  .responsive-flex {
+    display: flex;
+    align-items: center;
+		justify-content: center;
+    gap: 25px;
+    flex-direction: row;
+  }
+  
+  .responsive-flex img {
+    width: 200px;
+    height: auto;
+		border-radius: 40%;
+  }
+  
+  .responsive-flex div {
+    text-align: center;
+  }
+  
+  /* Responsive untuk mobile */
+  @media (max-width: 768px) {
+    .responsive-flex {
+      flex-direction: column;
+	    gap: 50px;
+    }
+  }
+
+  
