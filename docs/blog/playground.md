@@ -24,11 +24,21 @@ import NotFound from '../.vitepress/theme/components/NotFound.vue';
 
 <NotFound />
 
-<Animation />
-
 <div class="play-title">
   <h1>This Playground is still<br>a Work in Progress</h1>
   <p> But feel free to give it a try! </p>
+</div>
+
+<div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+  <h2>Slide dari kiri dengan durasi 1 detik dan delay 200ms</h2>
+</div>
+
+<div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
+  <p>Fade-in dari bawah dengan efek easing smooth</p>
+</div>
+
+<div data-aos="zoom-in" data-aos-offset="300">
+  <p>Zoom-in setelah di-scroll lebih jauh</p>
 </div>
 
 

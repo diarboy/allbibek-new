@@ -10,6 +10,7 @@
     "vitepress": "latest"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "docx": "^9.2.0",
     "file-saver": "^2.0.5",
     "jspdf": "^3.0.0",

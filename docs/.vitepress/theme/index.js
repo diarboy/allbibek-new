@@ -5,7 +5,8 @@ import GalleryCarousel from './components/GalleryCarousel.vue';
 import pdfmake from './components/pdfmake.vue';
 import FAQ from './components/FAQ.vue';
 import Blog from './components/blog.vue';
-import Animation from './components/Animation.vue';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default {
   ...DefaultTheme,
@@ -19,6 +20,14 @@ export default {
     app.component('GalleryCarousel', GalleryCarousel);
     app.component('pdfmake', pdfmake);
     app.component('Blog', Blog);
-    app.component('Animation', Animation);
+
+    if (typeof window !== 'undefined') {
+      AOS.init({
+        delay: 200, // Delay default
+        easing: 'ease-in-out', // Efek animasi default
+        mirror: true, // Animasi aktif saat scroll balik
+        once: false, // Animasi bisa diputar berkali-kali saat scroll
+      });
+    }
   },
 };
