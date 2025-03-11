@@ -2,12 +2,13 @@
 import { withBase, useData } from 'vitepress'
 
 const { theme } = useData() // Tetap gunakan useData() dari VitePress
+
 </script>
 
 <template>
   <div class="NotFound">
-    <img :src="withBase('/img/hero3.png')" alt="Hero 1" class="hero hero-left" />
-    
+      <img :src="withBase('/img/hero3.png')" alt="Hero 1" class="hero hero-left" />
+
   <div class="container-code">
     <p class="code code-small">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
     <p class="code code-large">{{ theme.notFound?.code ?? "Sorry" }}</p>
@@ -37,6 +38,14 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 </template>
 
 <style scoped>
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease !important;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
 .NotFound {
   display: flex;
   align-items: center;

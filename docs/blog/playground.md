@@ -24,10 +24,13 @@ import NotFound from '../.vitepress/theme/components/NotFound.vue';
 
 <NotFound />
 
+<Animation />
+
 <div class="play-title">
   <h1>This Playground is still<br>a Work in Progress</h1>
   <p> But feel free to give it a try! </p>
 </div>
+
 
 ## 📌 Custom Block Testing
 
