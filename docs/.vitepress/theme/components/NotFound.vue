@@ -6,7 +6,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
 <template>
   <div class="NotFound">
-    <img :src="withBase('/img/hero.png')" alt="Hero 1" class="hero hero-left" />
+    <img :src="withBase('/img/hero3.png')" alt="Hero 1" class="hero hero-left" />
     
   <div class="container-code">
     <p class="code code-small">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
@@ -32,7 +32,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
       </a>
       </div>
     </div>
-    <img :src="withBase('/img/hero3.png')" alt="Hero 2" class="hero hero-right" />
+    <img :src="withBase('/img/hero2.png')" alt="Hero 2" class="hero hero-right" />
   </div>
 </template>
 
@@ -82,13 +82,13 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
   .hero-right {
     order: 2; 
-    margin: 0 0 -50px 0;
+    margin: 10px 0 -70px 0;
   }
 }
 
 @media (min-width: 768px) {
   .NotFound {
-    padding: 20px 32px 20px;
+    padding: 20px 32px 90px;
   }
 }
 
@@ -155,4 +155,5 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
   border-color: var(--vp-c-brand-2);
   color: var(--vp-c-brand-2);
 }
+
 </style>

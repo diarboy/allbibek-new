@@ -78,7 +78,6 @@ const downloadDOCX = async () => {
 </script>
 
 <template>
-<h1 class="subtitle" style="text-align: center;">This Playground is <br>a Work in Progress</h1>
   <div class="playground-container">
     <div class="editor">
       <h2 class="title">Markdown Editor</h2>
@@ -130,6 +129,7 @@ textarea {
   height: 300px;
   padding: 10px;
   border: 1px solid #ccc;
+  background: transparent;
   border-radius: 5px;
   font-family: monospace;
 }

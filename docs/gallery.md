@@ -10,10 +10,10 @@ hero:
     src: /img/hero2.png
     alt: gallery
   actions:
-    - theme: sponsor
+    - theme: brand
       text: What a Blog
       link: /blog/introduction
-    - theme: brand
+    - theme: sponsor
       text: Hire Me
       link: /contact
 features:

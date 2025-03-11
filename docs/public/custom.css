@@ -4,26 +4,57 @@
 :root {
     --vp-home-hero-name-color: transparent;
     --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+
     --hero-text-gradient-light: linear-gradient(120deg, #bd34fe, #41d1ff);
     --hero-text-gradient-dark: linear-gradient(120deg, white 10%, #41d1ff);
     /* --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #4c09b9 50%); original */
     --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #41d1ff 50%);
     --vp-home-hero-image-filter: blur(40px);
+
     --vp-button-brand-bg: #1f9fa2;
+    --vp-button-brand-hover: #bd34fe;
     }
-    
-   .VPNavBarTitle {
+
+    /* Custom Dark Scheme */
+    html.dark {
+      --vp-c-bg: #0d0d0d;
+      --vp-c-bg-alt: #121212;
+      --vp-c-text-1: #e0e0e0;
+      --vp-c-text-2: #d0d0d0;
+      
+        /* Tweak Warna Border & Shadow */
+      --vp-c-border: #222222;   /* Border lebih halus, tidak mencolok */
+      --vp-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Shadow lebih soft */
+
+      /* Tweak Warna Highlight Code Block */
+      --vp-code-block-bg: #181818; /* Background kode lebih soft */
+      --vp-code-text: #e6e6e6;     /* Warna teks kode agar nyaman */
+      --vp-code-keyword: #ffcc66;  /* Warna keyword lebih terang */
+      --vp-code-string: #99cc99;   /* String pakai hijau pastel */
+      --vp-code-comment: #888888;  /* Warna komentar lebih redup */
+      --vp-code-function: #82aaff; /* Warna fungsi lebih menonjol */
+      --vp-code-variable: #c792ea; /* Warna variabel lebih lembut */
+
+      --vp-custom-block-tip-bg: var(--vp-c-tip-3);
+      --vp-custom-block-info-bg: var(--vp-c-default-2);
+      --vp-custom-block-warning-bg: var(--vp-c-warning-2);
+      --vp-custom-block-danger-bg: var(--vp-c-danger-3);
+      --vp-custom-block-caution-bg: var(--vp-c-caution-2);
+      --vp-custom-block-details-bg: var(--vp-custom-block-info-bg);
+    }
+
+    .VPNavBarTitle {
       font-family: 'Comfortaa', sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
     }
     
-    html.dark .VPNavBar title {
-      color: white;
-    }
-
     html.light .VPNavBar .title {
       color: black;
+    }
+
+    html.dark .VPNavBar title {
+      color: white;
     }
 
   @media (max-width: 768px) { 
