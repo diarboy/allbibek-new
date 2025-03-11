@@ -24,7 +24,7 @@ import NotFound from '../.vitepress/theme/components/NotFound.vue';
 
 <NotFound />
 
-<div class="play-title">
+<div class="play-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
   <h1>This Playground is still<br>a Work in Progress</h1>
   <p> But feel free to give it a try! </p>
 </div>
