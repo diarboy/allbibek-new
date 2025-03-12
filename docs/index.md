@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Develop, Build, and Innovate with Confidence
+title: Whatever It Tech!
 
 hero:
   name: "allbibek.🫥" 
@@ -43,7 +43,7 @@ features:
   - icon: 🎨
     title: UI/UX Design
     details: Explore modern design patterns and user experience principles.
-    link: /blog/blogtest
+    link: /blog/myschedule
   - icon: 🔐
     title: Security
     details: Implement robust security measures in your applications.

@@ -13,10 +13,10 @@
         </div>
         <transition name="slide">
           <div v-if="item.showDetails" class="card-details">
-            <p><strong>Dosen:</strong> <span v-html="splitValues(item.dosen)"></span></p>
-            <p><strong>Keterangan:</strong> {{ item.keterangan || '-' }}</p>
-            <p><strong>Sipen:</strong> {{ item.sipen || '-' }}</p>
-            <p><strong>Ruangan:</strong> {{ item.ruangan || 'TBA' }}</p>
+            <p><strong>Dosen: </strong> <span v-html="splitValues(item.dosen)"></span></p>
+            <p><strong>Keterangan: </strong> {{ item.keterangan || '-' }}</p>
+            <p><strong>Sipen: </strong> {{ item.sipen || '-' }}</p>
+            <p><strong>Ruang: </strong> {{ item.ruangan || 'TBA' }}</p>
           </div>
         </transition>
       </div>
@@ -33,16 +33,82 @@ const data = ref([
   {
     hari: 'Senin',
     waktu: '08:00 – 09:30',
-    kode: 'MK47',
-    mataKuliah: 'Pemasaran Digital (2T)',
+    kode: '',
+    mataKuliah: 'Pemasaran Digital',
     dosen: 'Ade Sutriyono, MM.SI. dan Hendri Rosmawan, M.Kom.',
     sipen: '(1) Muhammad Rizki, (2) Sabili Muhammad Azka',
     keterangan: 'Kelas reguler',
-    ruangan: 'Lab 3',
+    ruang: 'Lab 3',
     showDetails: false
   },
-  // Data lainnya...
-])
+  {
+    hari: 'Rabu',
+    waktu: '10:30 - 13:00',
+    kode: '',
+    mataKuliah: 'Sains dan Riset Ops',
+    dosen: 'Dr. Indra Surya Permana, M.M.',
+    sipen: '(1) Fasya Mahesa, (2) Muhamad Septian Ardiansyah Yudhono',
+    keterangan: 'Kelas reguler',
+    ruang: 'Lab 2',
+    showDetails: false
+  },
+  {
+    hari: 'Rabu',
+    waktu: '13:00 - 15:30',
+    kode: '',
+    mataKuliah: 'Pemrograman Mobile 1',
+    dosen: 'Mohamad Firdaus, M.Kom',
+    sipen: '(1) Muhammad Labbiibul Muhsin',
+    keterangan: 'Kelas reguler',
+    ruang: 'Lab 1',
+    showDetails: false
+  },
+  {
+    hari: 'Kamis',
+    waktu: '08:00 - 10:30',
+    kode: '',
+    mataKuliah: 'Pembelajaran Mesin',
+    dosen: 'Ade Sutriyono, S.Kom., MM.SI, Ahmad Ngiliyun, M.Kom.',
+    sipen: '(1) Jaisyi Bagir Rafsyahid',
+    keterangan: 'Kelas reguler',
+    ruang: 'Lab 4',
+    showDetails: false
+  },
+  {
+    hari: 'Kamis',
+    waktu: '10:30 - 13:00',
+    kode: '',
+    mataKuliah: 'Keamanan Data dan Info',
+    dosen: 'Mohamad Firdaus, M.Kom',
+    sipen: '(1) Indah Rizkika, (2) Dimas Dwi Rianto',
+    keterangan: 'Kelas reguler',
+    ruang: 'Lab 3',
+    showDetails: false
+  },
+  {
+    hari: 'Kamis',
+    waktu: '13:00 - 15:30',
+    kode: '',
+    mataKuliah: 'Rekayasa Perangkat Lunak',
+    dosen: 'Syaiful Ramadhan, M.Kom, Ahmad Ngiliyun, M.Kom.',
+    sipen: '(1) Muhamad Fuad Aziz',
+    keterangan: 'Kelas reguler',
+    ruang: 'Lab 2',
+    showDetails: false
+  },
+  {
+    hari: 'Sabtu',
+    waktu: '08:00 - 10:30',
+    kode: '',
+    mataKuliah: 'Cloud Computing 2',
+    dosen: 'Yassep Azzeri, M.T',
+    sipen: '(1) Ardiyansyah',
+    keterangan: 'Kelas reguler',
+    ruang: 'Lab 5',
+    showDetails: false
+  }
+]);
+
 
 // Contoh fungsi pembagi dosen
 const splitValues = (value) => {
@@ -74,13 +140,14 @@ const toggleDetails = (index) => {
   padding: 1rem;
 }
 .cards {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
+  gap: 2rem;
 }
 .card {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
   border-radius: 8px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
@@ -103,7 +170,7 @@ const toggleDetails = (index) => {
 .card-details {
   padding: 1rem;
   border-top: 1px solid #eee;
-  background: #f9f9f9;
+  background: var(--vp-c-bg);
 }
 
 /* Transition efek */
@@ -119,5 +186,19 @@ const toggleDetails = (index) => {
 .slide-enter-from, .slide-leave-to {
   max-height: 0;
   overflow: hidden;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 320px; /* Batasi agar tidak terlalu lebar */
+  }
 }
 </style>

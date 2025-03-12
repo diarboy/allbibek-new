@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 schedule-table">
+  <div class="schedule-table">
     <!-- Input pencarian -->
     <input
       v-model="search"

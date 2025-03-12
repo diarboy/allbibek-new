@@ -4,7 +4,7 @@
     {
       "label": "Start VitePress",
       "type": "shell",
-      "command": "npm install && npm run docs:dev",
+      "command": "npm install; npm run docs:dev",
       "problemMatcher": [],
       "group": {
         "kind": "build",
@@ -12,16 +12,24 @@
       },
       "options": {
         "shell": {
-          "executable": "cmd.exe",
-          "args": ["/d", "/c"]
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command"]
         }
       },
-      "dependsOn": ["Open Browser"]
+      "dependsOn": ["Open Browser"],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
     },
     {
       "label": "Open Browser",
       "type": "shell",
-      "command": "start http://localhost:5176",
+      "command": "npx wait-on http://localhost:5173; Start-Process http://localhost:5173",
       "problemMatcher": [],
       "group": {
         "kind": "none"

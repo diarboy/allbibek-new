@@ -18,7 +18,6 @@
       header-text-direction="center"
       body-text-direction="center"
       show-index
-      alternating
 
       class="custom-table"
     >
@@ -33,7 +32,7 @@
             <p><strong>Sipen:</strong></p>
             <p><span v-html="splitValues(item.sipen)"></span></p>
             <p>{{ item.keterangan || '-' }}</p>
-            <p><strong>Ruangan:</strong>{{ item.ruangan || 'TBA' }}</p>
+            <p><strong>Ruang: </strong>{{ item.ruangan || 'TBA' }}</p>
           
         </div>
       </template>
@@ -82,7 +81,7 @@ const data = ref([
     dosen: 'Hendri Rosmawan, M.Kom.',
     sipen: '(1) Muhammad Rizki, (2) Sabili Muhammad Azka',
     keterangan: 'Kelas Reguler',
-    ruangan: 'Lab 3'
+    ruangan: 'A2'
   },
   {
     hari: 'Selasa',
@@ -92,7 +91,7 @@ const data = ref([
     dosen: 'Dr. Andinna Ananda Yusuff, MM.',
     sipen: '(1) Aurelia Septia Apriani, (2) Dimas Surya Putra',
     keterangan: 'Kelas Reguler',
-    ruangan: 'Ruang 405'
+    ruangan: 'A2'
   },
   {
     hari: 'Rabu',
@@ -102,7 +101,7 @@ const data = ref([
     dosen: 'Dr. Indra Surya Permana, M.M., M.Kom.',
     sipen: '(1) Fasya Mahesa, (2) MS. Ardi',
     keterangan: 'Kelas Reguler',
-    ruangan: 'Lab 2'
+    ruangan: 'A2'
   },
   {
     hari: 'Rabu',
@@ -112,7 +111,7 @@ const data = ref([
     dosen: 'Moh Firdaus, M.Kom',
     sipen: 'Muhammad Labbiibul Muhsin',
     keterangan: 'Kelas Reguler',
-    ruangan: 'Studio 3'
+    ruangan: 'Labkom'
   },
   {
     hari: 'Kamis',
@@ -122,7 +121,7 @@ const data = ref([
     dosen: 'Ahmad Ngiliyun, M.Kom.',
     sipen: 'Jaisyi Bagir Rafsyahid',
     keterangan: 'Kelas Reguler',
-    ruangan: 'Lab AI'
+    ruangan: 'Labkom'
   },
   {
     hari: 'Kamis',
@@ -132,7 +131,7 @@ const data = ref([
     dosen: 'Moh Firdaus, M.Kom',
     sipen: '(1) Indah Rizkika, (2) Dimas Dwi Rianto',
     keterangan: 'Kelas Reguler',
-    ruangan: 'Ruang Cyber'
+    ruangan: 'Labkom'
   },
   {
     hari: 'Kamis',
@@ -142,7 +141,7 @@ const data = ref([
     dosen: 'Ahmad Ngiliyun, M.Kom.',
     sipen: 'Muhamad Fuad Aziz',
     keterangan: 'Kelas Reguler',
-    ruangan: 'Lab DevOps'
+    ruangan: 'Labkom'
   },
   {
     hari: 'Sabtu',
@@ -152,7 +151,7 @@ const data = ref([
     dosen: 'Yassep Azzery, M.T.',
     sipen: 'Ardi Syah',
     keterangan: 'Kelas Reguler',
-    ruangan: 'Cloud Lab'
+    ruangan: 'A2'
   }
 ])
 
@@ -176,48 +175,58 @@ const filteredData = computed(() => {
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
 
 .schedule-table {
-  --easy-table-header-background-color: #2d3a4f;
-  --easy-table-header-font-color: #fff;
-  --easy-table-body-row-text-align: right;
-  --easy-table-body-row-index-text-align: right;
-  --easy-table-body-row-cell-dosen-text-align: right;
-  --easy-table-body-row-cell-sipen-text-align: right;
-  --easy-table-footer-background-color: #f5f5f5;
-  --easy-table-footer-font-color: #666;
+  /* Warna Header */
+  --easy-table-header-background-color: var(--vp-c-gray-2);
+  --easy-table-header-font-color: var(--vp-c-text-1);
+
+  /* Body */
+  --easy-table-body-row-background-color: var(--vp-c-bg); /* Warna dasar */
+  --easy-table-body-row-font-color: var(--vp-c-text-1); /* Warna teks */
+  --easy-table-body-row-even-background-color: var(--vp-c-bg-soft); /* Warna even row */
+  --easy-table-body-row-hover-background-color: var(--vp-c-bg-mute); /* Hover */
+  --easy-table-body-row-hover-font-color: var(--vp-c-text-1); /* Teks tetap terbaca */
+  --easy-table-row-border: 1px solid var(--vp-c-gray-3);
+  
+  /* Warna Footer */
+  --easy-table-footer-background-color: var(--vp-c-gray-3);
+  --easy-table-footer-font-color: var(--vp-c-text-2);
+
+  /* Warna Hover */
+  --easy-table-body-row-hover-background-color: var(--vp-c-bg-mute);
 }
 
 .custom-table {
   border: 1px solid var(--vp-c-border);
   border-collapse: collapse;
   font-family: 'Manrope', sans-serif;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
 }
 
-/* Custom alignment */
-::v-deep(.custom-table .easy-table__header__item--index),
-::v-deep(.custom-table .easy-table__body__row__cell--index) {
-  text-align: right !important;
+/* Styling Header */
+.custom-table thead {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
 }
 
-::v-deep(.custom-table .easy-table__header__item--hari),
-::v-deep(.custom-table .easy-table__body__row__cell--hari) {
-  text-align: right !important;
+/* Styling Body */
+.custom-table tbody tr:nth-child(even) {
+  background: var(--vp-c-bg-soft);
 }
 
-::v-deep(.custom-table .easy-table__header__item--waktu),
-::v-deep(.custom-table .easy-table__body__row__cell--waktu) {
-  text-align: right !important;
+/* Hover Effect */
+.custom-table tbody tr:hover {
+  background: var(--vp-c-bg-mute);
+  color: var(--vp-c-text-1);
 }
 
-::v-deep(.custom-table .easy-table__header__item--mataKuliah),
-::v-deep(.custom-table .easy-table__body__row__cell--mataKuliah) {
-  text-align: right !important;
+/* Footer */
+.custom-table tfoot {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
 }
 
-::v-deep(.custom-table .easy-table__header__item--kode),
-::v-deep(.custom-table .easy-table__body__row__cell--kode) {
-  text-align: right !important;
-}
-
+/* Pagination */
 .custom-pagination {
   margin: 1rem 0;
   display: flex;
@@ -226,45 +235,54 @@ const filteredData = computed(() => {
 
 .custom-pagination button {
   padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
-  background: white;
+  border: 1px solid var(--vp-c-border);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .custom-pagination button.active {
-  background: #2563eb;
+  background: var(--vp-c-brand);
   color: white;
-  border-color: #2563eb;
+  border-color: var(--vp-c-brand);
 }
 
-/* Expand content styling */
+/* Expand Content */
 .expand-content {
   padding: 15px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--vp-c-border);
 }
 
 .expand-content p {
-  margin: 5px; 
-  font-size: 0.95rem; 
-  line-height: 1.5; 
+  margin: 5px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--vp-c-text-1);
 }
 
 /* Custom style untuk input pencarian */
 .search-input {
-  width:300px;
+  width: 350px;
   padding: 0.75rem;
   margin: 20px 0 20px 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
   border: 1px solid var(--vp-c-border);
   border-radius: 0.5rem;
   box-shadow: var(--vp-shadow);
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
   outline: none;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
+
 .search-input:focus {
-  border-color: #2563eb;
+  border-color: var(--vp-c-brand);
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
 }
+
+/* Responsiveness */
 @media (max-width: 768px) {
   .custom-table th,
   .custom-table td {
@@ -272,5 +290,9 @@ const filteredData = computed(() => {
     padding: 0.5rem;
     font-size: 0.8rem;
   }
+  .search-input {
+    width: 80%;
+  }
 }
 </style>
+
