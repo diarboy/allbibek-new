@@ -146,7 +146,7 @@ const toggleDetails = (index) => {
   gap: 2rem;
 }
 .card {
-  background: var(--vp-c-bg-soft);
+  background: var(--vp-c-bg);
   border: 1px solid var(--vp-c-border);
   border-radius: 8px;
   cursor: pointer;
@@ -169,7 +169,7 @@ const toggleDetails = (index) => {
 }
 .card-details {
   padding: 1rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--vp-c-gutter);
   background: var(--vp-c-bg);
 }
 
@@ -179,13 +179,6 @@ const toggleDetails = (index) => {
 }
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
-}
-.slide-enter-active, .slide-leave-active {
-  transition: max-height 0.5s ease;
-}
-.slide-enter-from, .slide-leave-to {
-  max-height: 0;
-  overflow: hidden;
 }
 
 /* Responsiveness */
@@ -198,7 +191,11 @@ const toggleDetails = (index) => {
   
   .card {
     width: 100%;
-    max-width: 320px; /* Batasi agar tidak terlalu lebar */
+    max-width: 320px;
+  }
+  
+  .card-title {
+    font-size: 1rem;
   }
 }
 </style>
