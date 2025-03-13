@@ -79,5 +79,6 @@ const isVisible = useElementVisibility(target);
 .hero {
   position: relative;
   height: 330px;
+  margin: 20px 20px 0 20px;
 }
 </style>

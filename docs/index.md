@@ -3,7 +3,7 @@ layout: home
 title: Whatever It Tech!
 
 hero:
-  name: "allbibek.🫥" 
+  name: "allbibek." 
   text: "Develop, Build, and Innovate with Confidence"
   tagline: Dive into a world of coding, creativity, and problem-solving, shared from my journey to yours. Together, let's explore programming, design, and personal growth as we build and innovate.
   image:

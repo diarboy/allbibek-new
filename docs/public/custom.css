@@ -11,8 +11,11 @@
     --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #41d1ff 50%);
     --vp-home-hero-image-filter: blur(40px);
 
-    --vp-button-brand-bg: #1f9fa2;
-    --vp-button-brand-hover: #bd34fe;
+    --vp-button-brand-bg: #02a5dc;
+    --vp-button-brand-hover-bg:#f22380;
+    /* --vp-button-alt-bg: #bd34fe; */
+    --vp-button-alt-hover-bg: #bd34fe;
+    --vp-button-alt-hover-text: var(--vp-c-white);
     }
 
     /* Custom Dark Scheme */
@@ -203,4 +206,3 @@
 	    gap: 50px;
     }
   }
-

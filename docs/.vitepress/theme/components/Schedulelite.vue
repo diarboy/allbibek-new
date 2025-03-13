@@ -6,7 +6,7 @@
         placeholder="Cari mata kuliah atau dosen..."
         class="search-input"
       />
-      <div>
+      <div class="table-wrapper">
         <table>
           <thead>
             <tr>
@@ -182,8 +182,14 @@
     border-color: #2563eb;
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
   }
+  
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
 
   table {
+    min-width: 600px; /* tambahan */
     width: 100%;
     max-width: fit-content;
     margin-bottom: 70px;
@@ -236,11 +242,12 @@
     }
     table {
       display: block;
-      overflow-x: hidden;
+      overflow-x: auto;
       white-space: nowrap;
     }
     .search-input {
-    max-width: 250px;
+    width: 250px;
+    max-width: 100%;
   }
   }
   </style>

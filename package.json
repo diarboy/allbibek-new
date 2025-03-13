@@ -10,12 +10,12 @@
     "vitepress": "^1.6.3"
   },
   "dependencies": {
+    "@vueuse/motion": "^3.0.3",
     "aos": "^2.3.4",
     "canvg": "^4.0.3",
     "docx": "^9.2.0",
     "esbuild": "^0.25.1",
     "file-saver": "^2.0.5",
-    "gsap": "^3.12.7",
     "jspdf": "^3.0.0",
     "markdown-it": "^14.1.0",
     "pdfmake": "^0.2.18",

@@ -31,10 +31,10 @@ features:
 <section>
 
 <div class="gallery-content">
-
+<div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
   <h2>Welcome to My Gallery</h2>
   <p> Enjoy a collection of my best works. </p>
-
+</div>
 </div>
 
 <HeroParallax>
@@ -46,7 +46,10 @@ features:
 </section>
 
 <section class="gallery-content">
+<div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
   <h2>Explore the Collection</h2>
+  </div>
+
   <ClientOnly>
     <GalleryFilter />
     <GalleryMasonry />
