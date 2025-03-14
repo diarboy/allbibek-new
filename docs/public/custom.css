@@ -16,6 +16,8 @@
     /* --vp-button-alt-bg: #bd34fe; */
     --vp-button-alt-hover-bg: #bd34fe;
     --vp-button-alt-hover-text: var(--vp-c-white);
+    --vp-nav-bg-color: rgba(255, 255, 255, 0.2) !important;
+    --vp-nav-blur: blur(10px) !important;
     }
 
     /* Custom Dark Scheme */
@@ -61,8 +63,26 @@
     }
 
   @media (max-width: 768px) { 
+    .VPNavBar {
+      backdrop-filter: blur(2px) !important;
+      -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
+    }
+
     .VPNavBar .title {
         font-size: 1.25rem;
+    }
+
+    .VPLocalNav {
+      background-color: rgba(255, 255, 255, 0.6) !important;
+      backdrop-filter: blur(2px) !important;
+      -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
+    }
+  }
+
+  @media (min-width: 960px) {
+    .VPNavBar {
+      backdrop-filter: blur(2px) !important;
+      -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
     }
   }
 
