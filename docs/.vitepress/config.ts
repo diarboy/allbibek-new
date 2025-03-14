@@ -26,7 +26,7 @@ export default defineConfig({
         href: 'https://api.fontshare.com/v2/css?f=manrope&display=swap',
       },
     ],
-    ['meta', { name: 'theme-color', content: '#bd34fe' }],
+    ['meta', { name: 'theme-color', content: '#02a5dc' }],
   ],
 
   themeConfig: {
