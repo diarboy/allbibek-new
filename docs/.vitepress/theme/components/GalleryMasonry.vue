@@ -1,5 +1,5 @@
 <template>
-  <div class="masonry-grid" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="200">
+  <div class="masonry-grid" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="400">
     <div 
       v-for="(image, index) in displayedImages" 
       :key="index" 

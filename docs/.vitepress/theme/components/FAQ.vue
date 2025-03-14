@@ -62,7 +62,7 @@ const toggleFAQ = (index) => {
 .faq-question {
   width: 100%;
   padding: 1rem;
-  background: var(--vp-c-bg-soft);
+  background: var(--vp-c-brand-soft);
   border: none;
   text-align: left;
   font-size: 1.1rem;
@@ -75,11 +75,11 @@ const toggleFAQ = (index) => {
 }
 
 .faq-question:hover {
-  background: var(--vp-c-bg-mute);
+  background: var(--vp-c-success-soft);
 }
 
 .faq-question.active {
-  background: var(--vp-c-brand);
+  background: var(--vp-c-success-3);
   color: white;
 }
 

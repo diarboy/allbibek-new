@@ -26,7 +26,8 @@ export default defineConfig({
         href: 'https://api.fontshare.com/v2/css?f=manrope&display=swap',
       },
     ],
-    ['meta', { name: 'theme-color', content: '#42d392' }],
+    ['meta', { name: 'theme-color', content: '#520178', media: '(prefers-color-scheme: light)' }],
+    ['meta', { name: 'theme-color', content: '#57d4ea', media: '(prefers-color-scheme: dark)' }],
   ],
 
   themeConfig: {
@@ -69,29 +70,29 @@ export default defineConfig({
       // { text: 'Menu Baru', link: '/menu-baru' },
     ],
 
-    sidebar: [
-      {
-        text: 'Guide',
-        collapsible: true,
-        collapsed: false,
-        items: [
-          { text: 'Getting Started', link: '/guide' },
-          { text: 'Web Dev Tutorials', link: '/blog/tutorials' },
-          { text: 'Git Dev Workflows', link: '/blog/gitdev' },
-          { text: 'Full-Stack Website', link: '/blog/full-stack' },
-          { text: 'Dasar Regex', link: '/blog/regex' },
-        ],
-      },
-      {
-        text: 'Blog',
-        collapsible: true,
-        collapsed: false,
-        items: [
-          { text: 'Introduction', link: '/blog/introduction' },
-          { text: 'MyFirst Post', link: '/blog/myfirstpost' },
-        ],
-      },
-    ],
+    sidebar: {
+      '/': [
+        {
+          text: 'Guide',
+          collapsed: true,
+          items: [
+            { text: 'Getting Started', link: '/guide' },
+            { text: 'Web Dev Tutorials', link: '/blog/tutorials' },
+            { text: 'Git Dev Workflows', link: '/blog/gitdev' },
+            { text: 'Full-Stack Website', link: '/blog/full-stack' },
+            { text: 'Dasar Regex', link: '/blog/regex' },
+          ],
+        },
+        {
+          text: 'Blog',
+          collapsed: true,
+          items: [
+            { text: 'Introduction', link: '/blog/introduction' },
+            { text: 'My First Post', link: '/blog/myfirstpost' },
+          ],
+        },
+      ],
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/diarboy' },

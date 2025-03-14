@@ -1,6 +1,7 @@
 <template>
-  <div data-aos="slide-left" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="200">
-    <h2 class="gallery-title">Explore More &darr;</h2>
+  <div>
+    <h2 class="gallery-title" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
+      Explore More &darr;</h2>
     <div class="carousel">
       <!-- Tombol Prev -->
       <button @click="prev" class="carousel-btn prev">❮</button>

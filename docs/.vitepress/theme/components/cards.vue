@@ -123,7 +123,7 @@ const toggleDetails = () => {
 <style scoped>
 .cards-container {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 1rem;
 }
 

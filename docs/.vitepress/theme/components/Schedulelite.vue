@@ -168,10 +168,10 @@
   <style scoped>
   .search-input {
     width:300px;
-    padding: 0.75rem;
-    margin: 20px 0 20px 0;
+    padding: 10px 10px 10px 15px;
+    margin-top: 10px;
     font-family: 'Manrope', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: 1px solid var(--vp-c-border);
     border-radius: 0.5rem;
     box-shadow: var(--vp-shadow);
@@ -179,9 +179,13 @@
     transition: border-color 0.3s, box-shadow 0.3s;
   }
   .search-input:focus {
-    border-color: #2563eb;
+    border-color: var(--vp-c-success-3);
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
   }
+
+  .search-input:focus::placeholder {
+  color: var(--vp-c-success-1);
+}
   
   .table-wrapper {
     width: 100%;
@@ -238,7 +242,7 @@
   @media (max-width: 768px) {
     th, td {
       padding: 8px;
-      font-size: 12px;
+      font-size: 13px;
     }
     table {
       display: block;
@@ -248,6 +252,7 @@
     .search-input {
     width: 250px;
     max-width: 100%;
+    font-size: 0.8rem;
   }
   }
   </style>

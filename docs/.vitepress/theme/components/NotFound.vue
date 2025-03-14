@@ -10,14 +10,14 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
     <div data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="200">  
       <img :src="withBase('/img/hero3.png')" alt="Hero 1" class="hero hero-left" />
     </div>
-  <div class="container-code" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="400">
+  <div class="container-code" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="200">
     <p class="code code-small">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
     <p class="code code-large">{{ theme.notFound?.code ?? "Sorry" }}</p>
     <p class="code code-small">{{ theme.notFound?.code ?? "We're" }}</p>
     <h1 class="title">{{ theme.notFound?.title ?? 'UNDER DEVELOPMENT' }}</h1>
   
-    <div class="divider" />
-    <blockquote class="quote">
+    <div class="divider"></div>
+    <blockquote class="quote" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="400">
       {{
         theme.notFound?.quote ??
         "But if you don't change your direction, and if you keep looking, you may end up where you are heading."
@@ -34,7 +34,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
       </a>
       </div>
     </div>
-    <div data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="200">
+    <div data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="200">
     <img :src="withBase('/img/hero2.png')" alt="Hero 2" class="hero hero-right" />
   </div>
   </div>
@@ -132,7 +132,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
 .divider {
   margin: 24px auto 18px;
-  width: 64px;
+  width: 128px;
   height: 1px;
   background-color: var(--vp-c-divider);
 }
@@ -141,6 +141,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
   margin: 0 auto;
   max-width: 256px;
   font-size: 14px;
+  border-left: 1px solid var(--vp-c-divider);
   font-weight: 500;
   color: var(--vp-c-text-2);
 }
@@ -164,8 +165,8 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 }
 
 .link:hover {
-  border-color: var(--vp-c-brand-2);
-  color: var(--vp-c-brand-2);
+  border-color: var(--vp-c-sponsor);
+  color: var(--vp-c-sponsor);
 }
 
 </style>

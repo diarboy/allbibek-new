@@ -188,8 +188,8 @@ const filteredData = computed(() => {
   --easy-table-row-border: 1px solid var(--vp-c-gray-3);
   
   /* Warna Footer */
-  --easy-table-footer-background-color: var(--vp-c-gray-3);
-  --easy-table-footer-font-color: var(--vp-c-text-2);
+  --easy-table-footer-background-color: var(--vp-c-bg-soft);
+  --easy-table-footer-font-color: var(--vp-c-text-1);
 
   /* Warna Hover */
   --easy-table-body-row-hover-background-color: var(--vp-c-bg-mute);
@@ -263,11 +263,11 @@ const filteredData = computed(() => {
 
 /* Custom style untuk input pencarian */
 .search-input {
-  width: 350px;
-  padding: 0.75rem;
-  margin: 20px 0 20px 0;
+  width: 300px;
+  padding: 10px 10px 10px 15px;
+  margin: 10px 0 10px 0;
   font-family: 'Manrope', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border: 1px solid var(--vp-c-border);
   border-radius: 0.5rem;
   box-shadow: var(--vp-shadow);
@@ -278,8 +278,12 @@ const filteredData = computed(() => {
 }
 
 .search-input:focus {
-  border-color: var(--vp-c-brand);
+  border-color: var(--vp-c-success-3);
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}
+
+.search-input:focus::placeholder {
+  color: var(--vp-c-success-1);
 }
 
 /* Responsiveness */
@@ -292,6 +296,7 @@ const filteredData = computed(() => {
   }
   .search-input {
     width: 80%;
+    font-size: 0.8rem;
   }
 }
 </style>
