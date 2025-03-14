@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-aos="slide-left" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="200">
     <h2 class="gallery-title">Explore More &darr;</h2>
     <div class="carousel">
       <!-- Tombol Prev -->

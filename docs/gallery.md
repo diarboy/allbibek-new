@@ -37,21 +37,21 @@ features:
 </div>
 </div>
 
+<div data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="200"> 
 <HeroParallax>
   <span style="font-size: 2.5rem;">📷</span>
   <h1>Love Capture.</h1>
   <p>Each image I capture is a story waiting to be told, a moment frozen in time, and an emotion expressed through light and shadow.</p>
 </HeroParallax>
-
+</div>
 </section>
 
 <section class="gallery-content">
 <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
   <h2>Explore the Collection</h2>
   </div>
-
+ 
   <ClientOnly>
-    <GalleryFilter />
     <GalleryMasonry />
     <GalleryCarousel />
   </ClientOnly>

@@ -7,9 +7,10 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
 <template>
   <div class="NotFound">
+    <div data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="200">  
       <img :src="withBase('/img/hero3.png')" alt="Hero 1" class="hero hero-left" />
-
-  <div class="container-code">
+    </div>
+  <div class="container-code" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="400">
     <p class="code code-small">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
     <p class="code code-large">{{ theme.notFound?.code ?? "Sorry" }}</p>
     <p class="code code-small">{{ theme.notFound?.code ?? "We're" }}</p>
@@ -33,7 +34,9 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
       </a>
       </div>
     </div>
+    <div data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="200">
     <img :src="withBase('/img/hero2.png')" alt="Hero 2" class="hero hero-right" />
+  </div>
   </div>
 </template>
 

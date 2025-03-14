@@ -73,9 +73,32 @@
     }
 
     .VPLocalNav {
-      background-color: rgba(255, 255, 255, 0.2) !important;
+      background-color: transparent !important;
       backdrop-filter: blur(2px) !important;
       -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
+    }
+
+    .VPSidebar {
+      background-color: transparent !important;
+      backdrop-filter: blur(3px) !important;
+      -webkit-backdrop-filter: blur(3px) !important; /* Untuk Safari */
+    }
+
+    .VPSidebarItem.level-0 .text {
+      color:  var(--vp-c-tip-1) !important;
+
+    }
+    .VPSidebarItem.level-1 .text, 
+    .VPSidebarItem.level-2 .text,
+    .VPSidebarItem.level-3 .text,
+    .VPSidebarItem.level-4 .text,
+    .VPSidebarItem.level-5 .text 
+    {
+      color: var(--vp-c-white) !important;
+    }
+
+    .VPSidebarItem.level-1.is-active .text {
+      color: var(--vp-c-success-1) !important;
     }
   }
 
