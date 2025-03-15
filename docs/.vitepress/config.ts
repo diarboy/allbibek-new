@@ -26,8 +26,8 @@ export default defineConfig({
         href: 'https://api.fontshare.com/v2/css?f=manrope&display=swap',
       },
     ],
-    ['meta', { name: 'theme-color', content: '#520178', media: '(prefers-color-scheme: light)' }],
-    ['meta', { name: 'theme-color', content: '#57d4ea', media: '(prefers-color-scheme: dark)' }],
+    ['meta', { name: 'theme-color', content: '#57d4ea', media: '(prefers-color-scheme: light)' }],
+    ['meta', { name: 'theme-color', content: '#520178', media: '(prefers-color-scheme: dark)' }],
   ],
 
   themeConfig: {
@@ -100,8 +100,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '<span class="subtitle">Released under the <a href="https://github.com/diarboy/diarboy/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><span class="title">MIT License</span></a></span>',
-      copyright: '<span class="subtitle">Copyright © 2024-present<a href="https://github.com/diarboy" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><span class="title" style="font-family: Comfortaa, sans-serif; font-size: 16px;"> 🔗 allbibek</span></a></span>'
+      message: '<span class="subtitle">Released under the <a href="https://github.com/diarboy/diarboy/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><span class="subtitle">MIT License</span></a></span>',
+      copyright: '<span class="subtitle">Copyright © 2024-present<a href="https://github.com/diarboy" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><span class="title" style="font-family: Comfortaa, sans-serif; font-size: 14px;"> 🔗allbibek</span></a></span>'
     },
     outline: [2, 3],
   },

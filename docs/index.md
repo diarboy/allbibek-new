@@ -21,12 +21,12 @@ features:
   - icon: 🚀
     title: Performance First
     details: Learn optimization techniques and best practices for building high-performance applications.
-    link: /blog/playground
+    link: /blog/myschedule
   - icon: 🛠️
     title: Developer Tools
     details: Discover essential tools and utilities that improve your development workflow.
-    link: https://github.com/diarboy/allbibek-new
-    linkText: View on GitHub
+    link: /blog/playground
+    linkText: Playground
     rel: external
     target: _blank
   - icon: 📚
@@ -38,8 +38,8 @@ features:
   - icon: 🔧
     title: Best Practices
     details: Learn industry-standard best practices for writing clean, maintainable code.
-    link: /contact
-    linkText: Contact Me
+    link: https://github.com/diarboy/allbibek-new
+    linkText: View on GitHub
   - icon: 🎨
     title: UI/UX Design
     details: Explore modern design patterns and user experience principles.

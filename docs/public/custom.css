@@ -81,11 +81,24 @@
     .VPSidebar {
       background-color: transparent !important;
       backdrop-filter: blur(3px) !important;
-      -webkit-backdrop-filter: blur(3px) !important; /* Untuk Safari */
+      -webkit-backdrop-filter: blur(3px) !important;
+    }
+
+    .VPNavScreen {
+      background-color: transparent !important;
+      backdrop-filter: blur(10px) !important;
+      -webkit-backdrop-filter: blur(10px) !important; 
+    }
+
+    .VPNavScreenAppearance {
+      background-color: transparent !important;
+      border: 1px solid var(--vp-c-divider);
+      border-radius: 8px;
+      transition: border 0.3s ease;
     }
 
     .VPSidebarItem.level-0 .text {
-      color:  var(--vp-c-tip-1) !important;
+      color: #a8b1ff !important;
 
     }
     .VPSidebarItem.level-1 .text, 
@@ -98,7 +111,7 @@
     }
 
     .VPSidebarItem.level-1.is-active .text {
-      color: var(--vp-c-success-1) !important;
+      color:  #3dd68c !important;
     }
   }
 

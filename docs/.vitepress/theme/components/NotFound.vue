@@ -7,24 +7,24 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
 <template>
   <div class="NotFound">
-    <div data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="200">  
+    <div data-aos="zoom-in-right">  
       <img :src="withBase('/img/hero3.png')" alt="Hero 1" class="hero hero-left" />
     </div>
-  <div class="container-code" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="200">
-    <p class="code code-small">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
-    <p class="code code-large">{{ theme.notFound?.code ?? "Sorry" }}</p>
-    <p class="code code-small">{{ theme.notFound?.code ?? "We're" }}</p>
+  <div class="container-code">
+    <p class="code code-small" data-aos="zoom-in-up" data-aos-delay="200">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
+    <p class="code code-large" data-aos="zoom-in-up" data-aos-delay="400">{{ theme.notFound?.code ?? "Sorry" }}</p>
+    <p class="code code-small" data-aos="zoom-in-up" data-aos-delay="600">{{ theme.notFound?.code ?? "We're" }}</p>
     <h1 class="title">{{ theme.notFound?.title ?? 'UNDER DEVELOPMENT' }}</h1>
   
     <div class="divider"></div>
-    <blockquote class="quote" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="400">
+    <blockquote class="quote" data-aos="zoom-in-up" data-aos-delay="800">
       {{
         theme.notFound?.quote ??
         "But if you don't change your direction, and if you keep looking, you may end up where you are heading."
       }}
     </blockquote>
 
-    <div class="action">
+    <div class="action" data-aos="zoom-in-up" data-aos-delay="900" data-aos-offset="300">
       <a
         class="link"
         :href="withBase('/')"
@@ -34,7 +34,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
       </a>
       </div>
     </div>
-    <div data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="200">
+    <div data-aos="zoom-in-left" data-aos-offset="300">
     <img :src="withBase('/img/hero2.png')" alt="Hero 2" class="hero hero-right" />
   </div>
   </div>

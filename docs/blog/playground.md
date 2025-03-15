@@ -20,27 +20,36 @@ hero:
 
 <script setup>
 import NotFound from '../.vitepress/theme/components/NotFound.vue';
+import TabsComponent from '../.vitepress/theme/components/Tabs.vue';
+import Math from '../.vitepress/theme/components/Math.vue';
 </script>
 
 <NotFound />
 
-<div class="play-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+<div class="play-title" data-aos="fade-up">
   <h1>This Playground is still<br>a Work in Progress</h1>
   <p> But feel free to give it a try! </p>
+
+<ClientOnly>
+  <TabsComponent />
+</ClientOnly>
+
+<ClientOnly>
+  <Math />
+</ClientOnly>
+
+<div data-aos="fade-right" data-aos-delay="300">
+  <h2>Slide dari kiri dengan durasi 1 detik dan delay 300ms</h2>
 </div>
 
-<div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
-  <h2>Slide dari kiri dengan durasi 1 detik dan delay 200ms</h2>
-</div>
-
-<div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
+<div data-aos="fade-up" data-aos-delay="600">
   <p>Fade-in dari bawah dengan efek easing smooth</p>
 </div>
 
 <div data-aos="zoom-in" data-aos-offset="300">
   <p>Zoom-in setelah di-scroll lebih jauh</p>
 </div>
-
+</div>
 
 ## 📌 Custom Block Testing
 

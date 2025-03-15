@@ -178,13 +178,6 @@ const toggleDetails = (index) => {
   color: var(--vp-c-white)
 }
 
-.divider {
-  margin: 5px auto;
-  width: 200px;
-  height: 1px;
-  background-color: var(--vp-c-divider);
-}
-
 .card-info {
   margin: 0.5rem 0 0;
   color: var(--vp-c-text-1);
@@ -238,6 +231,13 @@ const toggleDetails = (index) => {
 
   .card-title {
     font-size: 1.2rem;
+  }
+
+  .divider {
+    margin: 5px auto;
+    width: 200px;
+    height: 1px;
+    background-color: var(--vp-c-divider);
   }
 }
 </style>

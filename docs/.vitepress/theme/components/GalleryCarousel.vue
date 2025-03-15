@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="gallery-title" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
-      Explore More &darr;</h2>
+      Explore More &rarr;</h2>
     <div class="carousel">
       <!-- Tombol Prev -->
       <button @click="prev" class="carousel-btn prev">❮</button>

@@ -1,34 +1,7 @@
-<template>
-  <div class="masonry-grid" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="400">
-    <div 
-      v-for="(image, index) in displayedImages" 
-      :key="index" 
-      class="masonry-item"
-      :class="{ 'large': isLargeColumn(index) }"
-    >
-      <img :src="image.src" :alt="image.alt" loading="lazy" @click="openLightbox(index)" />
-    </div>
-  </div>
-
-  <button v-if="canLoadMore" class="load-more" @click="loadMore">
-    Load More
-  </button>
-
-  <!-- Lightbox -->
-  <ClientOnly>
-  <vue-easy-lightbox 
-    v-if="visible"
-    :visible="visible" 
-    :imgs="images.map(img => img.src)" 
-    :index="lightboxIndex" 
-    @hide="closeLightbox"
-  />
-  </ClientOnly>
-</template>
-
 <script setup>
 import { ref, computed } from "vue";
 import VueEasyLightbox from "vue-easy-lightbox";
+import { VPButton } from 'vitepress/theme';
 
 const images = ref([
   { src: "https://framerusercontent.com/images/RoHrmhTbdYJgHCLAtYVIPACylNw.png?scale-down-to=512", alt: "Project 1" },
@@ -86,6 +59,39 @@ const isLargeColumn = (index) => {
 
 </script>
 
+<template>
+  <TransitionGroup name="masonry">
+  <div class="masonry-grid" data-aos="fade-in" data-aos-delay="800">
+    <div 
+      v-for="(image, index) in displayedImages" 
+      :key="index" 
+      class="masonry-item"
+      :class="{ 'large': isLargeColumn(index) }"
+    >
+      <img :src="image.src" :alt="image.alt" loading="lazy" @click="openLightbox(index)" />
+    </div>
+  </div>
+  </TransitionGroup>
+
+  <VPButton 
+    v-if="canLoadMore" 
+    text="Load More" 
+    @click="loadMore"
+    class="load-more"
+  />
+
+  <!-- Lightbox -->
+  <ClientOnly>
+  <vue-easy-lightbox 
+    v-if="visible"
+    :visible="visible" 
+    :imgs="images.map(img => img.src)" 
+    :index="lightboxIndex" 
+    @hide="closeLightbox"
+  />
+  </ClientOnly>
+</template>
+
 <style scoped>
 .masonry-grid {
   display: grid;
@@ -128,16 +134,10 @@ const isLargeColumn = (index) => {
 }
 
 .load-more {
+  margin-top: 20px;
   display: block;
   width: auto;
   margin: 20px auto;
-  padding: 10px 20px;
-  border: none;
-  background: var(--vp-button-brand-bg);
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 60px;
   transition: 0.3s;
 }
 
@@ -148,6 +148,20 @@ const isLargeColumn = (index) => {
 .masonry-item:nth-child(24) img {
   height: 150px !important; /* Paksa tinggi gambar Project 24 */
   object-fit: cover;
+}
+
+.masonry-enter-active {
+  transition: opacity 0.5s ease, transform 2s ease;
+}
+
+.masonry-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.masonry-enter-to {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {

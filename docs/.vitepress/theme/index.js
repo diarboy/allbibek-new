@@ -25,9 +25,9 @@ export default {
     if (typeof window !== 'undefined') {
       AOS.init({
         delay: 200,
-        duration: 2000,
+        duration: 1500,
         easing: 'ease-in-out',
-        mirror: true, // Animasi aktif saat scroll balik
+        mirror: true,
         once: false,
       });
     }
