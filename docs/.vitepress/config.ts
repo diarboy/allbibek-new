@@ -5,23 +5,27 @@ export default defineConfig({
   title: 'allbibek.',
   description: 'Pixel-perfect!',
   base: '/',
+  
+  markdown: {
+    math: true
+  },
 
   head: [
-      ['script', { src: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js', async: true }],
-      ['script', {}, `
-        window.MathJax = {
-          tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']],
-            displayMath: [['$$', '$$'], ['\\[', '\\]']],
-            processEscapes: true,
-            processEnvironments: true
-          },
-          options: {
-            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            ignoreHtmlClass: 'tex2jax_ignore'
-          }
-        };
-      `],
+      // ['script', { src: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js', async: true }],
+      // ['script', {}, `
+      //   window.MathJax = {
+      //     tex: {
+      //       inlineMath: [['$', '$'], ['\\(', '\\)']],
+      //       displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      //       processEscapes: true,
+      //       processEnvironments: true
+      //     },
+      //     options: {
+      //       skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      //       ignoreHtmlClass: 'tex2jax_ignore'
+      //     }
+      //   };
+      // `],
     [
       'link',
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },

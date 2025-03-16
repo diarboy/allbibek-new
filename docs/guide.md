@@ -140,11 +140,11 @@ $$
 ``` -->
 <mark>When enabled, you can write math equations:</mark>
 
-<!-- $$
+$$
 f(x) = \int_{-\infty}^\infty
     \hat f(\xi)\,e^{2 \pi i \xi x}
     \,d\xi
-$$ -->
+$$
 
 ## 🎯 Final Thoughts
 

@@ -4,8 +4,8 @@ import VueEasyLightbox from "vue-easy-lightbox";
 import { VPButton } from 'vitepress/theme';
 
 const images = ref([
-  { src: "https://framerusercontent.com/images/RoHrmhTbdYJgHCLAtYVIPACylNw.png?scale-down-to=512", alt: "Project 1" },
-  { src: "https://framerusercontent.com/images/XNM9MRO0elobybFdjz9H7dHOfuk.jpg?", alt: "Project 2" },
+  { src: "https://framerusercontent.com/images/XNM9MRO0elobybFdjz9H7dHOfuk.jpg?", alt: "Project 1" },
+  { src: "https://framerusercontent.com/images/RoHrmhTbdYJgHCLAtYVIPACylNw.png?scale-down-to=512", alt: "Project 2" },
   { src: "https://framerusercontent.com/images/67h2DVc4IdYXb81Q7E8JaRwp7A.jpg?scale-down-to=512", alt: "Project 3" },
   { src: "https://framerusercontent.com/images/zFN6pFb5EpznGaqPUCHYW7GkngU.jpg?scale-down-to=512", alt: "Project 4" },
   { src: "https://framerusercontent.com/images/G3XVWhCFlN7SvjG805tkppyWQLI.jpg?scale-down-to=512", alt: "Project 5" },
