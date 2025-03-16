@@ -8,10 +8,16 @@ const wordsPerMinute = 200;
 const wordCount = ref(0);
 const readingTime = ref("0 menit 0 detik");
 
+const formatDate = (dateString) => {
+  if (!dateString) return null;
+  const date = new Date(dateString);
+  return new Intl.DateTimeFormat('en-US', { 
+    month: 'short', day: '2-digit', year: 'numeric' 
+  }).format(date);
+};
+
 const formattedDate = computed(() => {
-  return frontmatter.value.date || page.value.lastUpdated 
-    ? new Date(frontmatter.value.date || page.value.lastUpdated).toLocaleDateString()
-    : "No date available";
+  return formatDate(frontmatter.value.date) || formatDate(page.value.lastUpdated) || "No date available";
 });
 
 onMounted(() => {
