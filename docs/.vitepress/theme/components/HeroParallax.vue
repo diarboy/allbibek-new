@@ -43,12 +43,13 @@ const isVisible = useElementVisibility(target);
 
 .hero-bg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50;
+  left: 50;
+  width: 110%;
+  height: 110%;
   background: url('https://framerusercontent.com/images/RoHrmhTbdYJgHCLAtYVIPACylNw.png') no-repeat center;
   background-size: cover;
+  transform: translate(-50%, -50%) scale(1.2);
   transition: transform 0.1s ease-out;
   z-index: -1;
 }

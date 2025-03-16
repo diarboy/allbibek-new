@@ -71,16 +71,16 @@ const checkGuess = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 .tabs {
-  border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
   text-align: center;
   width: 320px;
-  background: #f9f9f9;
+  background: var(--vp-c-background-soft);
 }
 
 .tab-buttons {
@@ -93,13 +93,13 @@ const checkGuess = () => {
 .tab-buttons button {
   padding: 8px 12px;
   border: none;
-  background: #eee;
+  background: var(--vp-c-gray-1);
   cursor: pointer;
   border-radius: 5px;
 }
 
 .tab-buttons .active {
-  background: #007bff;
+  background: var(--vp-c-tip-3);
   color: white;
 }
 
@@ -113,7 +113,7 @@ const checkGuess = () => {
   padding: 5px 10px;
   margin: 5px;
   border: none;
-  background: #007bff;
+  background: var(--vp-c-success-2);
   color: white;
   cursor: pointer;
   border-radius: 5px;

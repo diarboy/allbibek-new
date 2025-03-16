@@ -183,9 +183,14 @@
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
   }
 
+  .search-input::placeholder {
+    color: var(--vp-c-bg-mute);
+    opacity: 0.8;
+  }
+  
   .search-input:focus::placeholder {
-  color: var(--vp-c-success-1);
-}
+    color: var(--vp-c-success-1);
+  }
   
   .table-wrapper {
     width: 100%;

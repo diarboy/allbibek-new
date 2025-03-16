@@ -30,7 +30,7 @@
 import { ref, computed } from 'vue'
 
 const search = ref('')
-// Data jadwal, tambahkan properti showDetails untuk kontrol tampilan detail
+
 const data = ref([
   {
     hari: 'Senin',
@@ -163,7 +163,6 @@ const toggleDetails = (index) => {
 .card.active-card {
   background-color: var(--vp-c-success-3);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02); /* Efek zoom kecil */
 }
 
 .card-header {
@@ -208,7 +207,7 @@ const toggleDetails = (index) => {
 }
 
 .slide-enter-to, .slide-leave {
-  max-height: 200px; /* Sesuaikan dengan tinggi konten */
+  max-height: auto;
   opacity: 1;
 }
 

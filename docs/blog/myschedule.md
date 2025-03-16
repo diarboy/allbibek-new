@@ -7,6 +7,7 @@ import liteSch from '../.vitepress/theme/components/Schedulelite.vue';
 import ScheduleTable from '../.vitepress/theme/components/ScheduleTable.vue';
 import cards from '../.vitepress/theme/components/cards.vue';
 import bucards from '../.vitepress/theme/components/bucards.vue';
+import Cards3 from '../.vitepress/theme/components/Cards3.vue';
 </script>
 
   <div class= "sch-01">
@@ -20,11 +21,15 @@ import bucards from '../.vitepress/theme/components/bucards.vue';
     <p> Easy table vue plugin </p>
     <ScheduleTable />
   </div>
-    
+
+<div class="sch-02">
+  <h2>Cards 3</h2>
+  <Cards3 />
+</div>
+
 <div class="sch-02">
   <h2>Cards</h2>
   <bucards />
-  
 </div>
 
 <div class="sch-02">

@@ -2,7 +2,6 @@
 import { ref, onMounted } from "vue";
 import { Chart, DoughnutController, ArcElement, Tooltip, Legend } from "chart.js";
 
-// Registrasi komponen yang diperlukan
 Chart.register(DoughnutController, ArcElement, Tooltip, Legend);
 
 const chartRef = ref(null);
@@ -12,37 +11,31 @@ onMounted(() => {
   new Chart(ctx, {
     type: "doughnut",
     data: {
-      labels: ["Start", "Process A", "Process B", "Decision", "End"],
+      labels: ["Media Sosial", "Pencarian Organik", "Iklan Berbayar", "Langsung", "Referral"],
       datasets: [
         {
-          data: [1, 2, 2, 1, 1], // Representasi jumlah langkah
-          backgroundColor: ["#28a745", "#007bff", "#17a2b8", "#ffc107", "#dc3545"],
-          hoverOffset: 10, // Efek saat hover
-        },
-      ],
+          data: [45, 25, 15, 10, 5], // Persentase trafik
+          backgroundColor: ["#4CAF50", "#FF9800", "#F44336", "#2196F3", "#9C27B0"],
+          hoverOffset: 8
+        }
+      ]
     },
     options: {
       responsive: true,
       plugins: {
         legend: {
-          position: "bottom",
+          position: "bottom"
         },
         tooltip: {
           callbacks: {
             label: (tooltipItem) => {
-              const labels = [
-                "Mulai Proses",
-                "Eksekusi A",
-                "Eksekusi B",
-                "Pengambilan Keputusan",
-                "Akhir",
-              ];
-              return labels[tooltipItem.dataIndex];
-            },
-          },
-        },
-      },
-    },
+              const sources = ["Facebook/Instagram", "Google", "Google Ads", "Direct Traffic", "Backlinks"];
+              return `${sources[tooltipItem.dataIndex]}: ${tooltipItem.raw}%`;
+            }
+          }
+        }
+      }
+    }
   });
 });
 </script>

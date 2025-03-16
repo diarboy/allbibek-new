@@ -14,9 +14,9 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
     <p class="code code-small" data-aos="zoom-in-up" data-aos-delay="200">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
     <p class="code code-large" data-aos="zoom-in-up" data-aos-delay="400">{{ theme.notFound?.code ?? "Sorry" }}</p>
     <p class="code code-small" data-aos="zoom-in-up" data-aos-delay="600">{{ theme.notFound?.code ?? "We're" }}</p>
-    <h1 class="title">{{ theme.notFound?.title ?? 'UNDER DEVELOPMENT' }}</h1>
+    <h1 class="title" data-aos="zoom-in-up" data-aos-delay="800">{{ theme.notFound?.title ?? 'UNDER DEVELOPMENT' }}</h1>
   
-    <div class="divider"></div>
+    <div class="divider" data-aos="zoom-in-up" data-aos-delay="800"></div>
     <blockquote class="quote" data-aos="zoom-in-up" data-aos-delay="800">
       {{
         theme.notFound?.quote ??
@@ -94,7 +94,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
   .hero-right {
     order: 2; 
-    margin: 10px 0 -70px 0;
+    margin: 10px 0 -40px 0;
   }
 }
 

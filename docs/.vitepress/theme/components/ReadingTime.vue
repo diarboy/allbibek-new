@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import { useData } from 'vitepress'
 
 const { frontmatter, page } = useData()
@@ -7,6 +7,12 @@ const { frontmatter, page } = useData()
 const wordsPerMinute = 200;
 const wordCount = ref(0);
 const readingTime = ref("0 menit 0 detik");
+
+const formattedDate = computed(() => {
+  return frontmatter.value.date || page.value.lastUpdated 
+    ? new Date(frontmatter.value.date || page.value.lastUpdated).toLocaleDateString()
+    : "No date available";
+});
 
 onMounted(() => {
   setTimeout(() => {
@@ -33,7 +39,7 @@ onMounted(() => {
 
   <div class="meta">
   <span>✍️ {{ frontmatter.author }}</span> |
-  <span>📅 {{ frontmatter.date }}</span> <br>
+  <span>📅 {{ formattedDate }}</span> <br>
   <span>🕛 {{ readingTime }} read</span> | ⏳ {{ wordCount }} words </br>
 
 </div>

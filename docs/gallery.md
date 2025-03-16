@@ -31,13 +31,13 @@ features:
 <section>
 
 <div class="gallery-content">
-<div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
+<div>
   <h2>Welcome to My Gallery</h2>
   <p> Enjoy a collection of my best works. </p>
 </div>
 </div>
 
-<div data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="200"> 
+<div> 
 <HeroParallax>
   <span style="font-size: 2.5rem;">📷</span>
   <h1>Love Capture.</h1>
@@ -47,8 +47,8 @@ features:
 </section>
 
 <section class="gallery-content">
-<div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
-  <h2>Explore the Collection</h2>
+  <div>
+    <h2>Explore the Collection</h2>
   </div>
  
   <ClientOnly>

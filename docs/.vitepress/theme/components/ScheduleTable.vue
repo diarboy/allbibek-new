@@ -265,7 +265,7 @@ const filteredData = computed(() => {
 .search-input {
   width: 300px;
   padding: 10px 10px 10px 15px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 20px 0;
   font-family: 'Manrope', sans-serif;
   font-size: 0.9rem;
   border: 1px solid var(--vp-c-border);
@@ -275,6 +275,11 @@ const filteredData = computed(() => {
   color: var(--vp-c-text-1);
   outline: none;
   transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input::placeholder {
+  color: var(--vp-c-bg-mute);
+  opacity: 0.8;
 }
 
 .search-input:focus {

@@ -1,7 +1,7 @@
 ---
 title: Intonesia
 author: Ardi Syah
-date: 05 April 2025
+date: 20 Februari 2025
 ---
 
 <script setup>

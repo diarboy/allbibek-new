@@ -61,7 +61,7 @@ const isLargeColumn = (index) => {
 
 <template>
   <TransitionGroup name="masonry">
-  <div class="masonry-grid" data-aos="fade-in" data-aos-delay="800">
+  <div class="masonry-grid">
     <div 
       v-for="(image, index) in displayedImages" 
       :key="index" 
@@ -151,7 +151,7 @@ const isLargeColumn = (index) => {
 }
 
 .masonry-enter-active {
-  transition: opacity 0.5s ease, transform 2s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .masonry-enter-from {

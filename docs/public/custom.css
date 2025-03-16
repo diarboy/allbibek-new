@@ -7,6 +7,7 @@
 
     --hero-text-gradient-light: linear-gradient(120deg, #bd34fe, #41d1ff);
     --hero-text-gradient-dark: linear-gradient(120deg, white 10%, #41d1ff);
+    --card-text-bg-soft: linear-gradient(120deg, rgba(189, 52, 254, 0.3), rgba(65, 209, 255, 0.3));
     /* --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #4c09b9 50%); original */
     --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #41d1ff 50%);
     --vp-home-hero-image-filter: blur(40px);
@@ -62,7 +63,7 @@
       color: white;
     }
 
-  @media (max-width: 768px) { 
+    @media (max-width: 768px) { 
     .VPNavBar {
       backdrop-filter: blur(2px) !important;
       -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
@@ -78,12 +79,6 @@
       -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
     }
 
-    .VPSidebar {
-      background-color: transparent !important;
-      backdrop-filter: blur(3px) !important;
-      -webkit-backdrop-filter: blur(3px) !important;
-    }
-
     .VPNavScreen {
       background-color: transparent !important;
       backdrop-filter: blur(10px) !important;
@@ -97,8 +92,18 @@
       transition: border 0.3s ease;
     }
 
+    .VPSidebar {
+      background-color: transparent !important;
+      backdrop-filter: blur(5px) !important;
+      -webkit-backdrop-filter: blur(5px) !important;
+    }
+
+    .VPBackdrop {
+      background-color: transparent !important;
+    }
+
     .VPSidebarItem.level-0 .text {
-      color: #a8b1ff !important;
+      color: var(--vp-c-success-3) !important;
 
     }
     .VPSidebarItem.level-1 .text, 
@@ -107,11 +112,15 @@
     .VPSidebarItem.level-4 .text,
     .VPSidebarItem.level-5 .text 
     {
-      color: var(--vp-c-white) !important;
+      color: var(--vp-c-text-2) !important;
     }
 
     .VPSidebarItem.level-1.is-active .text {
       color:  #3dd68c !important;
+    }
+
+    .VPHero.has-image .tagline {
+      margin: 20px auto !important;
     }
   }
 

@@ -21,7 +21,7 @@ hero:
 <script setup>
 import NotFound from '../.vitepress/theme/components/NotFound.vue';
 import TabsComponent from '../.vitepress/theme/components/Tabs.vue';
-import Math from '../.vitepress/theme/components/Math.vue';
+import Chart from '../.vitepress/theme/components/Chart.vue';
 </script>
 
 <NotFound />
@@ -35,11 +35,11 @@ import Math from '../.vitepress/theme/components/Math.vue';
 </ClientOnly>
 
 <ClientOnly>
-  <Math />
+  <Chart />
 </ClientOnly>
 
 <div data-aos="fade-right" data-aos-delay="300">
-  <h2>Slide dari kiri dengan durasi 1 detik dan delay 300ms</h2>
+  <h2 style= "text-align: center">Slide dari kiri dengan durasi 1 detik dan delay 300ms</h2>
 </div>
 
 <div data-aos="fade-up" data-aos-delay="600">
