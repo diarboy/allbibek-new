@@ -1,5 +1,6 @@
 ---
 layout: home
+title: "Playground"
 
 hero:
   name: "Playground"
@@ -30,25 +31,25 @@ import Chart from '../.vitepress/theme/components/Chart.vue';
   <h1>This Playground is still<br>a Work in Progress</h1>
   <p> But feel free to give it a try! </p>
 
-<ClientOnly>
-  <TabsComponent />
-</ClientOnly>
+  <ClientOnly>
+    <TabsComponent />
+  </ClientOnly>
 
-<ClientOnly>
-  <Chart />
-</ClientOnly>
+  <ClientOnly>
+    <Chart />
+  </ClientOnly>
 
-<div data-aos="fade-right" data-aos-delay="300">
-  <h2 style= "text-align: center">Slide dari kiri dengan durasi 1 detik dan delay 300ms</h2>
-</div>
+  <div data-aos="fade-right" data-aos-delay="300">
+    <h2 style= "text-align: center">Slide dari kiri dengan durasi 1 detik dan delay 300ms</h2>
+  </div>
 
-<div data-aos="fade-up" data-aos-delay="600">
-  <p>Fade-in dari bawah dengan efek easing smooth</p>
-</div>
+  <div data-aos="zoom-in" data-aos-offset="300">
+    <p>Zoom-in setelah di-scroll lebih jauh</p>
+  </div>
 
-<div data-aos="zoom-in" data-aos-offset="300">
-  <p>Zoom-in setelah di-scroll lebih jauh</p>
-</div>
+  <div data-aos="fade-up" data-aos-delay="600">
+    <p>Fade-in dari bawah dengan efek easing smooth</p>
+  </div>
 </div>
 
 ## 📌 Custom Block Testing

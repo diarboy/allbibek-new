@@ -8,7 +8,7 @@ const isVisible = useElementVisibility(target);
 </script>
 
 <template>
-  <div ref="target" class="hero">
+  <div ref="target" class="hero" :class="{ visible: isVisible }">
     <div
       class="hero-bg"
       :style="{
@@ -34,11 +34,15 @@ const isVisible = useElementVisibility(target);
   text-align: center;
   overflow: hidden;
   color: white;
-  opacity: v-bind(isVisible ? 1 : 0);
-  transform: v-bind(isVisible ? "translateY(0)" : "translateY(50px)");
+
   transition: opacity 1s ease-out, transform 1s ease-out;
   border-radius: 30px;
   margin: 20px auto;
+}
+
+.hero.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero-bg {
@@ -62,8 +66,8 @@ const isVisible = useElementVisibility(target);
 
 ::v-deep(.hero-content h1) {
     font-family: 'Manrope', sans-serif;
-    font-size: 2.5rem;
-    font-weight: normal;
+    font-size: 4em;
+    font-weight: 700;
     letter-spacing: -0.05em;
     line-height: 1.3;
     color: transparent;
@@ -71,15 +75,16 @@ const isVisible = useElementVisibility(target);
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
+    text-shadow: 2px 4px 8px rgba(170, 154, 170, 0.8);
   }
 
 @media (max-width: 768px) {
-   ::v-deep(.hero-content h1) { font-size: 2rem; }
-}
+   ::v-deep(.hero-content h1) { font-size: 3rem; }
 
-.hero {
-  position: relative;
-  height: 330px;
-  margin: 20px 20px 0 20px;
+  .hero {
+    position: relative;
+    height: 330px;
+    margin: 20px 20px 0 20px;
+  }
 }
 </style>

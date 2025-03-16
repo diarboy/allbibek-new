@@ -83,6 +83,18 @@ const toggleFAQ = (index) => {
   color: white;
 }
 
+html.dark .faq-question {
+  background: var(--vp-c-brand-2);
+}
+
+html.dark .faq-question:hover {
+  background: var(--vp-c-brand-1);
+}
+
+html.dark .faq-question.active {
+  background: var(--vp-c-brand-soft);
+}
+
 .icon {
   font-size: 1.5rem;
   line-height: 1;
@@ -94,6 +106,10 @@ const toggleFAQ = (index) => {
   transition: max-height 0.3s ease-out;
   background: var(--vp-c-bg);
   padding: 0 1rem;
+}
+
+html.dark .faq-answer {
+  background: var(--vp-c-gray-1);
 }
 
 .faq-answer.open {

@@ -1,5 +1,6 @@
 ---
 layout: home
+title: "Schedule"
 ---
 
 <script setup>

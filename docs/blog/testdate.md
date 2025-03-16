@@ -1,5 +1,5 @@
 ---
-title: Frontmatter Date 🚀
+title: Linear Programming 🚀
 author: Ardi Syah
 ---
 
@@ -11,9 +11,7 @@ import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
 
 <ReadingTime />
 
-## Buat Test Frontmatter Date
-
-# Soal Linear Programming
+## Soal Linear Programming
 
 Sebuah perusahaan logistik ingin mengirim barang menggunakan dua jenis moda transportasi: **truk** dan **kapal**. Perusahaan ingin menentukan jumlah optimal truk dan kapal yang digunakan agar biaya pengiriman **seminimal mungkin**, sambil memenuhi beberapa kendala operasional.
 
@@ -40,11 +38,12 @@ Formulasikan model Linear Programming (LP) untuk masalah ini dan tentukan:
 - Jumlah truk ($x$) dan kapal ($y$) yang harus digunakan agar biaya pengiriman **minimum**.
 - Berapa total biaya minimum?
 
-Jawaban yang saya berikan sebelumnya **belum sepenuhnya menyelesaikan soal**, karena hanya merumuskan model Linear Programming (LP) secara matematis. Untuk benar-benar menyelesaikan soal, kita perlu mencari solusi optimal dari model LP tersebut, yaitu nilai $x$ (jumlah truk) dan $y$ (jumlah kapal) yang meminimalkan biaya total sambil memenuhi semua kendala.
+## Jawaban
+
+Untuk benar-benar menyelesaikan soal, kita perlu mencari solusi optimal dari model LP tersebut, yaitu nilai $x$ (jumlah truk) dan $y$ (jumlah kapal) yang meminimalkan biaya total sambil memenuhi semua kendala.
 
 Berikut adalah langkah-langkah untuk menyelesaikan model LP ini secara lengkap menggunakan **metode grafik**:
 
----
 
 ### 1. Fungsi Tujuan
 Kita ingin meminimalkan:
@@ -52,15 +51,11 @@ $$
 Z = 3.000.000x + 2.000.000y
 $$
 
----
-
 ### 2. Kendala
 Kendala yang diberikan adalah:
 1. $5x + 8y \leq 60$ (kendala waktu)
 2. $x + y \geq 10$ (kendala jumlah kontainer)
 3. $x \geq 0$, $y \geq 0$ (kendala non-negatif)
-
----
 
 ### 3. Gambar Grafik
 Untuk menyelesaikan menggunakan metode grafik, kita perlu menggambarkan garis-garis kendala pada bidang koordinat $x$-$y$.
@@ -91,12 +86,8 @@ Jadi, garis ini melalui titik $(10, 0)$ dan $(0, 10)$. Daerah yang memenuhi adal
 - $x \geq 0$: Hanya daerah di sebelah kanan sumbu $y$.
 - $y \geq 0$: Hanya daerah di atas sumbu $x$.
 
----
-
 ### 4. Daerah Feasible
 Daerah feasible adalah irisan dari semua kendala. Dengan menggambarkan garis-garis di atas, kita dapat menentukan daerah feasible. Titik-titik sudut daerah feasible adalah calon solusi optimal.
-
----
 
 ### 5. Titik Sudut Daerah Feasible
 Setelah menggambar grafik, kita temukan titik-titik sudut daerah feasible:
@@ -119,8 +110,6 @@ Setelah menggambar grafik, kita temukan titik-titik sudut daerah feasible:
 2. Titik potong $x + y = 10$ dengan sumbu $x$: $(10, 0)$.
 3. Titik potong $5x + 8y = 60$ dengan sumbu $y$: $(0, 7.5)$.
 
----
-
 ### 6. Evaluasi Fungsi Tujuan
 Hitung nilai $Z$ di setiap titik sudut:
 1. Di $\left( \frac{20}{3}, \frac{10}{3} \right)$:
@@ -140,8 +129,6 @@ Hitung nilai $Z$ di setiap titik sudut:
    $$
    Z = 3.000.000 \cdot 0 + 2.000.000 \cdot 7.5 = 15.000.000
    $$
-
----
 
 ### 7. Solusi Optimal
 Nilai $Z$ terkecil adalah **15.000.000**, yang terjadi di titik $(0, 7.5)$. Namun, karena jumlah kapal harus bilangan bulat, kita perlu membulatkan $y = 7.5$ menjadi $y = 8$ (menggunakan pembulatan ke atas agar memenuhi kendala).

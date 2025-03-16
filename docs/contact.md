@@ -11,7 +11,7 @@ lastUpdated: false
   <div class="profile-header">
   <img src="/img/hero.png" alt="Avatar Allbibek" class="avatar" style="width:200px; border-radius:50%;">
     <div class="profile-info">
-      <h2>allbibek.</h2>
+      <h1>allbibek.</h1>
       <p>Senior Software Developer</p>
       <p>🌍 Based in Indonesia</p>
       <em>Every lesson is a step in the journey,<br>and every note is a trace leading to deeper understanding.</em>

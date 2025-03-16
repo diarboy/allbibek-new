@@ -53,7 +53,8 @@ onMounted(() => {
 
 <style scoped>
 .meta {
+  margin-top: 5px;
   font-size: 14px;
-  color: gray;
+  color: var(--vp-c-text-1);
 }
 </style>

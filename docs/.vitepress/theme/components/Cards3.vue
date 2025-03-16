@@ -163,7 +163,7 @@
   }
   
   .card-header:hover {
-    background: var(--vp-c-success-soft);
+    background: var(--vp-c-gray-1);
   }
   
   .card-header.active {
@@ -207,7 +207,7 @@
 
 @media (max-width: 768px) {
   .card-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .card-header {
     font-size: 1rem;
