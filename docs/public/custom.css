@@ -63,122 +63,48 @@
       color: white;
     }
 
-    @media (max-width: 768px) { 
-    .VPNavBar {
-      backdrop-filter: blur(2px) !important;
-      -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
-    }
-
-    .VPNavBar .title {
-        font-size: 1.25rem;
-    }
-
-    .VPLocalNav {
-      background-color: transparent !important;
-      backdrop-filter: blur(2px) !important;
-      -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
-    }
-
-    .VPNavScreen {
-      background-color: transparent !important;
-      backdrop-filter: blur(10px) !important;
-      -webkit-backdrop-filter: blur(10px) !important; 
-    }
-
-    .VPNavScreenAppearance {
-      background-color: transparent !important;
-      border: 1px solid var(--vp-c-divider);
-      border-radius: 8px;
-      transition: border 0.3s ease;
-    }
-
-    .VPSidebar {
-      background-color: transparent !important;
-      backdrop-filter: blur(5px) !important;
-      -webkit-backdrop-filter: blur(5px) !important;
-    }
-
-    .VPBackdrop {
-      background-color: transparent !important;
-    }
-
-    .VPSidebarItem.level-0 .text {
-      color: var(--vp-c-success-3) !important;
-
-    }
-    .VPSidebarItem.level-1 .text, 
-    .VPSidebarItem.level-2 .text,
-    .VPSidebarItem.level-3 .text,
-    .VPSidebarItem.level-4 .text,
-    .VPSidebarItem.level-5 .text 
-    {
-      color: var(--vp-c-text-2) !important;
-    }
-
-    .VPSidebarItem.level-1.is-active .text {
-      color:  #3dd68c !important;
-    }
-
-    .VPHero.has-image .tagline {
-      margin: 20px auto !important;
-    }
-  }
-
-  @media (min-width: 960px) {
-    .VPNavBar {
-      backdrop-filter: blur(2px) !important;
-      -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
-    }
-  }
-
     .VPHomeHero .name {
       font-family: 'Comfortaa', sans-serif;
       font-size: 2.5rem; 
       font-weight: 900;
 	    line-height: 1.5;
       color: white;
-  }
-
-  .VPHomeHero .text {
-    font-family: 'Manrope', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 400;
-    letter-spacing: -0.05em;
-    line-height: 1;
-    color: transparent;
-    background: var(--hero-text-gradient-light);
-    -webkit-background-clip: text;
-    background-clip: text;
-    display: inline-block;
-  }
-
-  html.dark .VPHomeHero .text {
-    background: var(--hero-text-gradient-dark);
-    -webkit-background-clip: text;
-    background-clip: text;
-    display: inline-block;
-  }
-  
-  @media (max-width: 768px) {
-    .VPHomeHero .text {
-      font-size: 2.5rem; 
     }
-  }
 
-  /* body {
-    font-family: 'Inter', sans-serif;
-  } */
+    .VPHomeHero .text {
+      font-family: 'Manrope', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 400;
+      letter-spacing: -0.05em;
+      line-height: 1;
+      color: transparent;
+      background: var(--hero-text-gradient-light);
+      -webkit-background-clip: text;
+      background-clip: text;
+      display: inline-block;
+    }
 
-  h1, h2, h3, h4, h5, h6,
-  div[class*="vp-doc"] h1, 
-  div[class*="vp-doc"] h2, 
-  div[class*="vp-doc"] h3, 
-  div[class*="vp-doc"] h4, 
-  div[class*="vp-doc"] h5, 
-  div[class*="vp-doc"] h6 {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 900;
-  }
+    html.dark .VPHomeHero .text {
+      background: var(--hero-text-gradient-dark);
+      -webkit-background-clip: text;
+      background-clip: text;
+      display: inline-block;
+    }
+
+      /* body {
+        font-family: 'Inter', sans-serif;
+      } */
+
+    h1, h2, h3, h4, h5, h6,
+    div[class*="vp-doc"] h1, 
+    div[class*="vp-doc"] h2, 
+    div[class*="vp-doc"] h3, 
+    div[class*="vp-doc"] h4, 
+    div[class*="vp-doc"] h5, 
+    div[class*="vp-doc"] h6 {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 900;
+    }
 
   /* h1, div[class*="vp-doc"] h1 {
     background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
@@ -201,6 +127,20 @@
     -webkit-text-fill-color: transparent;
   }
 
+  html.dark .title-alt {
+    background: -webkit-linear-gradient(315deg, #f6d365, #fda085);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .title-alt {
+    background: -webkit-linear-gradient(315deg, #9d50bb, #6e48aa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   /* background: -webkit-linear-gradient(315deg, #a1c4fd, #c2e9fb); blue */
   /* background: -webkit-linear-gradient(315deg, #9d50bb, #6e48aa); purple */
   /* background: -webkit-linear-gradient(315deg, #f6d365, #fda085); gold */
@@ -217,25 +157,6 @@
     max-height: unset;
     width: 540px;
     height: auto;
-  }
-  
-  @media (max-width: 768px) {
-    .VPImage.image-src {
-      width: 280px;
-      height:auto;
-    }
-  }
-
-  @media (min-width: 640px) {
-    :root {
-      --vp-home-hero-image-filter: blur(56px);
-    }
-  }
-  
-  @media (min-width: 960px) {
-    :root {
-      --vp-home-hero-image-filter: blur(72px);
-    }
   }
 
   .VPFeature {
@@ -263,11 +184,176 @@
   .responsive-flex div {
     text-align: center;
   }
-  
-  /* Responsive untuk mobile */
-  @media (max-width: 768px) {
-    .responsive-flex {
-      flex-direction: column;
-	    gap: 50px;
-    }
+
+  .gallery-content h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    line-height: 1.3;
+    color: transparent;
+    background: var(--hero-text-gradient-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
   }
+
+  html.dark .gallery-content h2 {
+    background: var(--hero-text-gradient-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  .gallery-content p {
+    text-align: center;
+  }
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(72px);
+  }
+
+  .VPNavBar {
+    backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
+  }
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+
+  .VPHero.has-image .tagline {
+    margin: 20px auto !important;
+  }
+
+  .VPHomeHero .text {
+    font-size: 2.5rem; 
+  }
+  .VPImage.image-src {
+    width: 280px;
+    height:auto;
+  }
+
+  .VPNavBar {
+    backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
+  }
+  .VPNavBar .title {
+      font-size: 1.25rem;
+  }
+  .VPLocalNav {
+    background-color: transparent !important;
+    backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
+  }
+  .VPNavScreen {
+    background-color: transparent !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important; 
+  }
+  .VPNavScreenAppearance {
+    background-color: transparent !important;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 8px;
+    transition: border 0.3s ease;
+  }
+
+  .VPSidebar {
+    background-color: transparent !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+  }
+  .VPBackdrop {
+    background-color: transparent !important;
+  }
+  .VPSidebarItem.level-0 .text {
+    color: var(--vp-c-success-3) !important;
+  }
+  .VPSidebarItem.level-1 .text, 
+  .VPSidebarItem.level-2 .text,
+  .VPSidebarItem.level-3 .text,
+  .VPSidebarItem.level-4 .text,
+  .VPSidebarItem.level-5 .text 
+  {
+    color: var(--vp-c-text-2) !important;
+  }
+  .VPSidebarItem.level-1.is-active .text {
+    color:  #3dd68c !important;
+  }
+
+  .responsive-flex {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .gallery-hero { height: 40vh; }
+  .gallery-hero h1 { font-size: 2rem; }
+  .gallery-content h2 { font-size: 2rem; }
+  .gallery-hero p { font-size: 1rem; }
+  .features-container { grid-template-columns: 1fr; }
+  .feature-item { max-width: 90%; margin: 0 auto; }
+}
+
+/* Profile CSS */
+
+.profile-card {
+  /* background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(245, 245, 245, 0.3)); */
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+  transition: transform 0.4s ease-in-out;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin: 0;
+  background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  font-family: 'Comfortaa', sans-serif !important;
+  -webkit-background-clip: text;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-info p, em {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+@media (max-width: 640px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}

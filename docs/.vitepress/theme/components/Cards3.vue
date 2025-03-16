@@ -171,7 +171,15 @@
     color: white;
   }
   
+  html.dark .card-header {
+    background: var(--vp-c-brand-2);
+  }
+
   html.dark .card-header.active {
+    background: var(--hero-text-gradient-light);
+  } 
+
+  html.dark .card-header:hover {
     background: var(--hero-text-gradient-light);
   } 
 
@@ -196,5 +204,19 @@
     max-height: 400px;
     padding: 1rem;
   }
-  </style>
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .card-header {
+    font-size: 1rem;
+  }
+
+  .card-header p {
+    margin: 5px 0 16px 0;
+  }
+}
+
+</style>
   

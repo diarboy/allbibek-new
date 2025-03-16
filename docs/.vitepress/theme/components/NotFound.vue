@@ -24,7 +24,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
       }}
     </blockquote>
 
-    <div class="action" data-aos="zoom-in-up" data-aos-delay="900" data-aos-offset="300">
+    <div class="action" data-aos="zoom-in-up" data-aos-delay="900">
       <a
         class="link"
         :href="withBase('/')"

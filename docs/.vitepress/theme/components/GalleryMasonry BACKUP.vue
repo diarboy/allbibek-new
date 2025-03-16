@@ -31,6 +31,7 @@ const images = ref([
   { src: "https://framerusercontent.com/images/9Vyk9ajjUKU3fs1QSew1zZASKgY.jpg?scale-down-to=1024", alt: "Project 25" },
 ]);
 
+
 const visible = ref(false);
 const lightboxIndex = ref(0);
 
@@ -52,20 +53,24 @@ const loadMore = () => {
   displayedCount.value += batchSize;
 };
 
+const isLargeColumn = (index) => {
+  return (index % 4 === 1 || index % 4 === 3);
+};
+
 </script>
 
 <template>
   <TransitionGroup name="masonry">
-    <div class="masonry-grid">
-      <div 
-        v-for="(image, index) in displayedImages" 
-        :key="index" 
-        class="masonry-item"
-        :class="{ 'wide': index % 3 === 0 }"
-      >
-        <img :src="image.src" :alt="image.alt" loading="lazy" @click="openLightbox(index)" />
-      </div>
+  <div class="masonry-grid">
+    <div 
+      v-for="(image, index) in displayedImages" 
+      :key="index" 
+      class="masonry-item"
+      :class="{ 'large': isLargeColumn(index) }"
+    >
+      <img :src="image.src" :alt="image.alt" loading="lazy" @click="openLightbox(index)" />
     </div>
+  </div>
   </TransitionGroup>
 
   <VPButton 
@@ -77,20 +82,21 @@ const loadMore = () => {
 
   <!-- Lightbox -->
   <ClientOnly>
-    <vue-easy-lightbox 
-      v-if="visible"
-      :visible="visible" 
-      :imgs="images.map(img => img.src)" 
-      :index="lightboxIndex" 
-      @hide="closeLightbox"
-    />
+  <vue-easy-lightbox 
+    v-if="visible"
+    :visible="visible" 
+    :imgs="images.map(img => img.src)" 
+    :index="lightboxIndex" 
+    @hide="closeLightbox"
+  />
   </ClientOnly>
 </template>
 
 <style scoped>
 .masonry-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 4 Kolom */
+  grid-auto-rows: 150px; /* Dasar tinggi tiap baris */
   gap: 12px;
   padding: 10px;
 }
@@ -104,12 +110,16 @@ const loadMore = () => {
 .masonry-item img {
   width: 100%;
   height: 100%;
-  max-height: 300px;
   object-fit: cover;
   border-radius: 10px;
   filter: brightness(0.95);
+  transform-origin: center;
   cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;
+
+  will-change: transform, filter;
+
+  transition: transform 1s cubic-bezier(0.3, 0, 0.2, 1), 
+              filter 1s cubic-bezier(0.3, 0, 0.2, 1);
 }
 
 .masonry-item img:hover {
@@ -117,8 +127,8 @@ const loadMore = () => {
   filter: brightness(1);
 }
 
-.masonry-item.wide {
-  grid-column: span 2;
+.masonry-item.large {
+  grid-row: span 2; /* Kolom ke-2 dan ke-4 lebih tinggi */
 }
 
 .load-more {
@@ -133,13 +143,32 @@ const loadMore = () => {
   background: #0056b3;
 }
 
+.masonry-item:nth-child(24) img {
+  height: 150px !important; /* Paksa tinggi gambar Project 24 */
+  object-fit: cover;
+}
+
+.masonry-enter-active {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.masonry-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.masonry-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   .masonry-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .masonry-item.wide {
-    grid-column: span 2;
+  .masonry-item.large {
+    grid-row: span 1;
   }
 }
 </style>

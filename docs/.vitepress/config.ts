@@ -7,6 +7,21 @@ export default defineConfig({
   base: '/',
 
   head: [
+      ['script', { src: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js', async: true }],
+      ['script', {}, `
+        window.MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true
+          },
+          options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            ignoreHtmlClass: 'tex2jax_ignore'
+          }
+        };
+      `],
     [
       'link',
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
@@ -101,8 +116,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '<span class="subtitle">Released under the <a href="https://github.com/diarboy/diarboy/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><span class="subtitle">MIT License</span></a></span>',
-      copyright: '<span class="subtitle">Copyright © 2024-present<a href="https://github.com/diarboy" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><span class="title" style="font-family: Comfortaa, sans-serif; font-size: 14px;"> 🔗allbibek</span></a></span>'
+      message: '<span class="title-alt">Released under the <a href="https://github.com/diarboy/diarboy/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><span class="title">MIT License</span></a></span>',
+      copyright: '<span class="title-alt">Copyright © 2024-present<a href="https://github.com/diarboy" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><span class="title" style="font-family: Comfortaa, sans-serif; font-size: 14px;"> 🔗allbibek</span></a></span>'
     },
     outline: [2, 3],
   },

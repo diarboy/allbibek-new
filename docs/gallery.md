@@ -63,37 +63,3 @@ import HeroParallax from './.vitepress/theme/components/HeroParallax.vue';
 
 </script>
 
-<style>
-
-  .gallery-content h2 {
-    font-family: 'Manrope', sans-serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    letter-spacing: -0.05em;
-    line-height: 1.3;
-    color: transparent;
-    background: var(--hero-text-gradient-light);
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-align: center;
-  }
-
-  html.dark .gallery-content h2 {
-    background: var(--hero-text-gradient-dark);
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-  
-  .gallery-content p {
-    text-align: center;
-  }
-
-@media (max-width: 768px) {
-  .gallery-hero { height: 40vh; }
-  .gallery-hero h1 { font-size: 2rem; }
-  .gallery-content h2 { font-size: 2rem; }
-  .gallery-hero p { font-size: 1rem; }
-  .features-container { grid-template-columns: 1fr; }
-  .feature-item { max-width: 90%; margin: 0 auto; }
-}
-</style>
