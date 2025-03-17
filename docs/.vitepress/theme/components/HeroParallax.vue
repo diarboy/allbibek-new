@@ -63,6 +63,11 @@ const isVisible = useElementVisibility(target);
   z-index: 2;
   padding: 20px;
 }
+@media (min-width: 769px) {
+  .hero-content {
+    padding: 300px;
+  }  
+}
 
 ::v-deep(.hero-content h1) {
     font-family: 'Manrope', sans-serif;
@@ -75,11 +80,11 @@ const isVisible = useElementVisibility(target);
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
-    text-shadow: 2px 4px 8px rgba(170, 154, 170, 0.8);
+    text-shadow: 2px 2px 8px rgba(170, 154, 170, 0.5);
   }
 
 @media (max-width: 768px) {
-   ::v-deep(.hero-content h1) { font-size: 3rem; }
+   ::v-deep(.hero-content h1) { font-size: 2.5rem; }
 
   .hero {
     position: relative;

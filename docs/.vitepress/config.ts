@@ -109,7 +109,7 @@ export default defineConfig({
           items: [
             { text: 'Introduction', link: '/blog/introduction' },
             { text: 'My First Post', link: '/blog/myfirstpost' },
-            { text: 'Frontmatter Date', link: '/blog/testdate' },
+            { text: 'Linier Programming', link: '/blog/linier-programming' },
           ],
         },
       ],

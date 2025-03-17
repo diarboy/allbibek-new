@@ -50,6 +50,10 @@ import Chart from '../.vitepress/theme/components/Chart.vue';
   <div data-aos="fade-up" data-aos-delay="600">
     <p>Fade-in dari bawah dengan efek easing smooth</p>
   </div>
+
+  <blockquote data-aos="fade-up" style="text-align: center; font-size: 3rem">
+    <strong>Cukup berdoa dan bersedekah saja!</strong> 🧘🏻
+  </blockquote>
 </div>
 
 ## 📌 Custom Block Testing

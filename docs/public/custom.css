@@ -251,7 +251,6 @@
 
   .VPNavBar {
     backdrop-filter: blur(2px) !important;
-    -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
   }
   .VPNavBar .title {
       font-size: 1.4rem;
@@ -263,12 +262,10 @@
   .VPLocalNav {
     background-color: transparent !important;
     backdrop-filter: blur(2px) !important;
-    -webkit-backdrop-filter: blur(2px) !important; /* Untuk Safari */
   }
   .VPNavScreen {
     background-color: transparent !important;
     backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important; 
   }
   .VPNavScreenAppearance {
     background-color: transparent !important;
@@ -280,7 +277,6 @@
   .VPSidebar {
     background-color: transparent !important;
     backdrop-filter: blur(5px) !important;
-    -webkit-backdrop-filter: blur(5px) !important;
   }
   .VPBackdrop {
     background-color: transparent !important;

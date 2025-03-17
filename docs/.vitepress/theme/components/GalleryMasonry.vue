@@ -55,17 +55,15 @@ const loadMore = () => {
 </script>
 
 <template>
-  <TransitionGroup name="masonry">
-    <div class="masonry-grid">
+  <TransitionGroup name="masonry" tag="div" class="masonry-grid">
       <div 
         v-for="(image, index) in displayedImages" 
-        :key="index" 
+        :key="`${image.src}-${index}`"
         class="masonry-item"
         :class="{ 'wide': index % 3 === 0 }"
       >
         <img :src="image.src" :alt="image.alt" loading="lazy" @click="openLightbox(index)" />
       </div>
-    </div>
   </TransitionGroup>
 
   <VPButton 

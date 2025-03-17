@@ -19,5 +19,16 @@ onMounted(() => {
 </script>
 
 <template>
-  <a data-pin-do="embedPin" :data-pin-width="pinSize" :href="pinUrl"></a>
+  <div class="pin-container">
+    <a data-pin-do="embedPin" :data-pin-width="pinSize" :href="pinUrl"></a>
+  </div>
 </template>
+
+<style scoped>
+.pin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+</style>

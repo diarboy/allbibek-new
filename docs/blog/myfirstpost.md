@@ -12,9 +12,9 @@ import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
 
 <ReadingTime />
 
-![VitePress Logo](/img/hero.png){style="width:300px; height:auto;"}
+![Hero Blog](/img/hero1.png){style="width:200px; height:auto; margin: 0 auto -30px;"}
 
-<div class="wrapper">
+<div class="wrapper" style="text-align: center">
     <h3 style="font-size: 22px;">
         <span class="title">Jangan Banyak Tanya!</span><br>
         <span class="subtitle" style="font-size: 48px; line-height: 54px; letter-spacing: 2px">Ikuti Saja.</span><br>
@@ -28,12 +28,11 @@ Menjadi orang yang `iya-iya saja` di Indonesia jauh lebih mudah. Percaya pada il
 
 Negara ini birokratis hingga ke akar-akarnya. Jabatan berarti Kuasa, Kuasa berarti Kehormatan, dan kita dipaksa menelannya mentah-mentah demi hidup `normal`.
 
-<p align="center"> <img src="/img/hero3.png" alt="VitePress Logo" width="300">
-</p>
+Yang ironisnya lagi, banyak orang setuju bahwa <mark>Pendidikan itu penting</mark>. Namun, ketika pendidikan menghasilkan individu yang berpikir kritis dan berani berbeda, reaksi yang diterima sering kali seperti ini:
 
-### Yang ironisnya lagi
+<!-- <p align="center"> <img src="/img/hero3.png" alt="Hero3" width="300"></p> -->
 
-Banyak orang setuju bahwa <mark>Pendidikan itu penting</mark>. Namun, ketika pendidikan menghasilkan individu yang berpikir kritis dan berani berbeda, reaksi yang diterima sering kali seperti ini:
+![Hero Blog](/img/hero3.png){style="width:300px; height:auto; margin: 0 auto -50px;"}
 
 > 🙎🏻‍♀️ <span class="title">"Wah, sudah pintar sekarang, jadi sudah nggak butuh nasihat orang tua?"</span>
 >
@@ -45,9 +44,11 @@ Banyak orang setuju bahwa <mark>Pendidikan itu penting</mark>. Namun, ketika pen
 
 Di Indonesia, jalan hidup sudah diatur. Tujuan hidup bukan soal passion atau ketenteraman jiwa, melainkan penerimaan sosial. Jangan terlalu banyak berpikir soal idealisme politik, hak kelompok marginal, atau pemberdayaan masyarakat.
 
-<p align="right">
-  <img src="/img/hero2.png" alt="VitePress Logo" width="300">
-</p>
+<!-- <p align="center">
+  <img src="/img/hero2.png" alt="Hero2" width="300">
+</p> -->
+
+![Hero Blog](/img/hero2.png){style="width:300px; height:auto; margin: 0 auto -50px;"}
 
 > ***Cukup berdoa dan bersedekah saja!*** 🧘🏻
 
@@ -86,4 +87,4 @@ Jika kita terus pasif dan `iya-iya saja`, maka masyarakat yang terjebak dalam lo
 
 >Karena satu-satunya jalan untuk benar-benar merdeka adalah membebaskan diri dari belenggu pola pikir yang menekan kita sejak lahir. Dan kebebasan itu harus diperjuangkan. Dengan pikiran, dengan kata-kata, dengan keberanian untuk tidak lagi tunduk.
 >
-<PinterestEmbed pinUrl="https://www.pinterest.com/pin/34832597112243536/" pinSize="medium"/>
+<PinterestEmbed pinUrl="https://www.pinterest.com/pin/34832597112243536/" pinSize="medium" />
