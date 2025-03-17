@@ -51,10 +51,11 @@ export default defineConfig({
 
   themeConfig: {
     lastUpdated: {
-      text: 'Updated at',
+      text: 'Updated on',
       formatOptions: {
-        dateStyle: 'medium',
+        dateStyle: 'long', /* full / long / medium / short */
         timeStyle: 'short'
+        // hourCycle: 'h23'
       }
     },
     logo: '/favicon.svg',

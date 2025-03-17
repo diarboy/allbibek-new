@@ -7,9 +7,10 @@ import FAQ from './components/FAQ.vue';
 import Blog from './components/blog.vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Layout from './Layout.vue';
 
 export default {
-  ...DefaultTheme,
+  ...DefaultTheme, Layout,
 
   enhanceApp({ app }) {
 

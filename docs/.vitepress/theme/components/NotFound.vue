@@ -8,7 +8,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 <template>
   <div class="NotFound">
     <div data-aos="zoom-in-right">  
-      <img :src="withBase('/img/hero3.png')" alt="Hero 1" class="hero hero-left" />
+      <img :src="withBase('/img/hero.png')" alt="Hero 1" class="hero hero-left" />
     </div>
   <div class="container-code">
     <p class="code code-small" data-aos="zoom-in-up" data-aos-delay="200">{{ theme.notFound?.code ?? 'Ooops!' }}</p>

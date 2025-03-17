@@ -43,7 +43,7 @@ import Chart from '../.vitepress/theme/components/Chart.vue';
     <h2 style= "text-align: center">Slide dari kiri dengan durasi 1 detik dan delay 300ms</h2>
   </div>
 
-  <div data-aos="zoom-in" data-aos-offset="300">
+  <div data-aos="zoom-in" data-aos-offset="300" data-aos-delay="600">
     <p>Zoom-in setelah di-scroll lebih jauh</p>
   </div>
 

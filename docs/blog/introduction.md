@@ -23,13 +23,5 @@ Welcome to the **Blog** section! 🎉 This space is dedicated to sharing insight
 - Engage with the community by **suggesting topics** or sharing experiences.
 - Follow for updates and **new content drops!**
 
-<Mermaid>
-  graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-</Mermaid>
-
 🚀 **Happy exploring!** 🎨💡
 
