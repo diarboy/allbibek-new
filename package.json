@@ -23,10 +23,14 @@
     "markdown-it": "^14.1.0",
     "pdfmake": "^0.2.18",
     "swiper": "^11.2.5",
-    "vite": "^6.2.1",
+    "vite": "^6.2.2",
     "vue": "^3.5.13",
     "vue-chartjs": "^5.3.2",
     "vue-easy-lightbox": "^1.19.0",
     "vue3-easy-data-table": "^1.5.47"
+  },
+  "overrides": {
+    "vite": "^6.2.2",
+    "esbuild": "^0.25.1"
   }
 }
