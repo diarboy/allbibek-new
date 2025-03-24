@@ -25,7 +25,7 @@ I'm always excited to connect with fellow developers and tech enthusiasts. Feel 
 
 ## Social Media
 
-- 💼 **LinkedIn**: ↗️ <span class="title">[Ardi Syah](https://linkedin.com/in/ardibukan)</span>
+- 💼 **LinkedIn**: ↗️ <span class="title">[allbibek](https://linkedin.com/in/ardibukan)</span>
 - 🐱 **GitHub**: ↗️ <span class="title"> [@diarboy](https://github.com/diarboy)</span> 
 - 🐦 **Twitter**: ↗️ <span class="title">[@allbibek_ ](https://x.com/allbibek_)</span> 
 

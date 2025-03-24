@@ -88,11 +88,11 @@ html.dark .faq-question {
 }
 
 html.dark .faq-question:hover {
-  background: var(--vp-c-brand-1);
+  background: var(--hero-text-gradient-light);
 }
 
 html.dark .faq-question.active {
-  background: var(--vp-c-brand-soft);
+  background: var(--hero-text-gradient-light);
 }
 
 .icon {
@@ -109,7 +109,7 @@ html.dark .faq-question.active {
 }
 
 html.dark .faq-answer {
-  background: var(--vp-c-gray-1);
+  background: var(--card-text-bg-soft);
 }
 
 .faq-answer.open {

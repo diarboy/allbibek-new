@@ -28,9 +28,5 @@
     "vue-chartjs": "^5.3.2",
     "vue-easy-lightbox": "^1.19.0",
     "vue3-easy-data-table": "^1.5.47"
-  },
-  "overrides": {
-    "vite": "^6.2.2",
-    "esbuild": "^0.25.1"
   }
 }

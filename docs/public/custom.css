@@ -8,6 +8,7 @@
     --hero-text-gradient-light: linear-gradient(120deg, #bd34fe, #41d1ff);
     --hero-text-gradient-dark: linear-gradient(120deg, white 10%, #41d1ff);
     --card-text-bg-soft: linear-gradient(120deg, rgba(189, 52, 254, 0.3), rgba(65, 209, 255, 0.3));
+    --text-box-bg-soft: radial-gradient(circle at left, rgba(189, 52, 254, 0.2), rgba(65, 209, 255, 0.2));
     /* --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #4c09b9 50%); original */
     --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #41d1ff 50%);
     --vp-home-hero-image-filter: blur(40px);
@@ -167,6 +168,33 @@
     width: 540px;
     height: auto;
   }
+
+  /* Color Background Features Box */
+  .VPFeatures .item .VPFeature .box {
+    background: #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  html.dark .VPFeatures .item .VPFeature .box {
+    background: var(--text-box-bg-soft);
+    backdrop-filter: blur(45px);
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Warna berbeda untuk setiap box */
+  .VPFeatures .item:nth-child(1) .box { background-color: rgba(255, 235, 59, 0.2); }
+  .VPFeatures .item:nth-child(2) .box { background-color: rgba(76, 175, 80, 0.2); }
+  .VPFeatures .item:nth-child(3) .box { background-color: rgba(33, 150, 243, 0.2); }
+  .VPFeatures .item:nth-child(4) .box { background-color: rgba(255, 87, 34, 0.2); } 
+  .VPFeatures .item:nth-child(5) .box { background-color: rgba(156, 39, 176, 0.2); }
+  .VPFeatures .item:nth-child(6) .box { background-color: rgba(120, 120, 120, 0.2); }  
+
+/* ---------------------------------------------------------------------------------------- */
 
   .VPFeature {
     transition: transform 0.2s ease-in-out;

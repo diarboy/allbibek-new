@@ -12,9 +12,6 @@ In this article, we will walk you through the process of building a full-stack w
 6. [📝 Handling Forms, CRUD, and Dashboard](#handling-forms-crud-and-dashboard)
 7. [🏁 Conclusion](#conclusion)
 
-
----
-
 ## <a id="project-structure"></a> 📂 Project Structure
 
 Before we dive into the technical details, let's first create the structure of the project. A typical full-stack application consists of both a front-end and a back-end. We'll organize the project with separate directories for each.
@@ -206,8 +203,6 @@ Supabase is a powerful platform for building modern web applications, offering a
 
 By combining the database design, authentication, and security features in Supabase with a front-end framework like Vue.js, you can create robust, full-stack web applications with ease.
 
----
-
 ## <a id="front-end-development-with-vuejs"></a> 🎨 Front-End Development with Vue.js
 
 For the front-end, we will use **Vue.js**, a popular JavaScript framework. Vue.js is known for its simplicity and flexibility, which makes it an ideal choice for building interactive UIs.
@@ -252,8 +247,6 @@ function handleLogin() {
 </script>
 ```
 
----
-
 ## <a id="user-authentication-with-api"></a> 🔐 User Authentication with API
 
 We will use a REST API to handle the user login and registration process. Our back-end server will expose endpoints for authentication and managing user data.
@@ -297,8 +290,6 @@ router.post('/login', async (req, res) => {
 
 module.exports = router;
 ```
-
----
 
 ## <a id="back-end-development-with-nodejs"></a> 🆕 Back-End Development with Node.js
 
@@ -356,8 +347,6 @@ async function createPost() {
 ### Dashboard:
 
 After login, users will be redirected to a dashboard where they can view their posts, update their profile, and perform other actions. The dashboard will interact with the back-end API to fetch and display user-specific data.
-
----
 
 ## Conclusion
 

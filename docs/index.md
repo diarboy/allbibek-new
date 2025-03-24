@@ -21,7 +21,9 @@ features:
   - icon: 🚀
     title: Performance First
     details: Learn optimization techniques and best practices for building high-performance applications.
-    link: /blog/myschedule
+    link: https://diarboy.github.io/allbibek/
+    linkText: Visit Former GH Page
+    rel: noopener noreferrer
   - icon: 🛠️
     title: Developer Tools
     details: Discover essential tools and utilities that improve your development workflow.
@@ -42,7 +44,7 @@ features:
     title: UI/UX Design
     details: Explore modern design patterns and user experience principles.
     link: https://github.com/diarboy
-    linkText: View on GitHub
+    linkText: Visit on GitHub
     rel: external noopener noreferrer
     target: _blank
   - icon: 🔐
@@ -50,8 +52,6 @@ features:
     details: Implement robust security measures in your applications.
 
 ---
-
-
 
 ## <span class="title">What are Allbibek?</span>
 
@@ -82,5 +82,5 @@ Boost your app's performance with these best practices.
 ::: info 🔧 Developer Tools
 **Recommended Tooling**
 Enhance your workflow with top developer tools.
-[Read more](/guide)
+[Read more](/blog/myschedule)
 :::
