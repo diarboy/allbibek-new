@@ -8,7 +8,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 <template>
   <div class="NotFound">  
     <div class="hero-container">
-      <div class="hero-bg" data-aos="zoom-in-up"></div>
+      <div class="hero-bg"></div>
           <img :src="withBase('/img/hero.png')" alt="Hero 1" class="hero hero-left" data-aos="zoom-in" />
     </div>
   <div class="container-code">
@@ -35,7 +35,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
       </a>
       </div>
     </div>
-      <div class="hero-container" data-aos="zoom-in-up">
+      <div class="hero-container">
         <div class="hero-bg"></div>
             <img :src="withBase('/img/hero2.png')" alt="Hero 2" class="hero hero-right" />
       </div>
@@ -113,7 +113,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
   }
 
   .hero {
-    width: 330px; 
+    width: 300px; 
   }
 
   .hero-left {
