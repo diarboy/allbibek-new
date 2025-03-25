@@ -7,7 +7,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
 <template>
   <div class="NotFound">  
-    <div class="hero-container">
+    <div class="hero-container" data-aos="fade-in" data-aos-offset="300">
       <div class="hero-bg"></div>
       <img :src="withBase('/img/hero.png')" alt="Hero 1" class="hero hero-left"/>
     </div>
@@ -35,7 +35,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
       </a>
       </div>
     </div>
-      <div class="hero-container">
+      <div class="hero-container" data-aos="fade-up" data-aos-delay="1000">
         <div class="hero-bg"></div>
         <img :src="withBase('/img/hero2.png')" alt="Hero 2" class="hero hero-right" />
       </div>
