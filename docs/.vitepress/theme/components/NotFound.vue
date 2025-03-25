@@ -6,12 +6,11 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 </script>
 
 <template>
-  <div class="NotFound">
-    <div data-aos="zoom-in-right">  
-      <div class="hero-container">
-        <div class="hero-bg"></div>
-      <img :src="withBase('/img/hero.png')" alt="Hero 1" class="hero hero-left" /></div>
-  </div>
+  <div class="NotFound">  
+    <div class="hero-container">
+      <div class="hero-bg" data-aos="zoom-in-up"></div>
+          <img :src="withBase('/img/hero.png')" alt="Hero 1" class="hero hero-left" data-aos="zoom-in" />
+    </div>
   <div class="container-code">
     <p class="code code-small" data-aos="zoom-in-up" data-aos-delay="200">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
     <p class="code code-large" data-aos="zoom-in-up" data-aos-delay="400">{{ theme.notFound?.code ?? "Sorry" }}</p>
@@ -36,13 +35,11 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
       </a>
       </div>
     </div>
-    <div data-aos="zoom-in-left" data-aos-offset="300">
-      <div class="hero-container">
+      <div class="hero-container" data-aos="zoom-in-up">
         <div class="hero-bg"></div>
-    <img :src="withBase('/img/hero2.png')" alt="Hero 2" class="hero hero-right" />
-  </div>
+            <img :src="withBase('/img/hero2.png')" alt="Hero 2" class="hero hero-right" />
+      </div>
     </div>
-  </div>
 </template>
 
 <style scoped>

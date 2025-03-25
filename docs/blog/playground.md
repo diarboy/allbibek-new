@@ -51,8 +51,8 @@ import Chart from '../.vitepress/theme/components/Chart.vue';
     <p>Fade-in dari bawah dengan efek easing smooth</p>
   </div>
 
-  <blockquote data-aos="fade-up" style="text-align: center; font-size: 3rem">
-    <strong>Cukup berdoa dan bersedekah saja!</strong> 🧘🏻
+  <blockquote data-aos="fade-up" style="text-align: center; font-size: 2rem; line-height: 2.5rem;">
+    <strong>We're continuously improving and adding new features. In the meantime, feel free to experiment and let us know what you think!</strong>
   </blockquote>
 </div>
 
