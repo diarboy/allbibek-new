@@ -8,8 +8,10 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 <template>
   <div class="NotFound">
     <div data-aos="zoom-in-right">  
-      <img :src="withBase('/img/hero.png')" alt="Hero 1" class="hero hero-left" />
-    </div>
+      <div class="hero-container">
+        <div class="hero-bg"></div>
+      <img :src="withBase('/img/hero.png')" alt="Hero 1" class="hero hero-left" /></div>
+  </div>
   <div class="container-code">
     <p class="code code-small" data-aos="zoom-in-up" data-aos-delay="200">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
     <p class="code code-large" data-aos="zoom-in-up" data-aos-delay="400">{{ theme.notFound?.code ?? "Sorry" }}</p>
@@ -35,8 +37,11 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
       </div>
     </div>
     <div data-aos="zoom-in-left" data-aos-offset="300">
+      <div class="hero-container">
+        <div class="hero-bg"></div>
     <img :src="withBase('/img/hero2.png')" alt="Hero 2" class="hero hero-right" />
   </div>
+    </div>
   </div>
 </template>
 
@@ -58,9 +63,35 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
   text-align: center;
 }
 
+.hero-container {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 50px 0 50px;
+}
+
 .hero {
   width: 400px;
+  max-width: 400px;
   height: auto;
+  position: relative;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: linear-gradient(45deg,  #41d1ff 20%, #bd34fe 50%, #ff41a0 90%);
+  backdrop-filter: blur(40px);
+  filter: blur(50px);
+  z-index: -1;
+  transform: translateY(10%);
 }
 
 @media (min-width: 768px) {
@@ -94,7 +125,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
   .hero-right {
     order: 2; 
-    margin: 10px 0 -40px 0;
+    margin: 10px 0 -20px 0;
   }
 }
 
