@@ -9,7 +9,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
   <div class="NotFound">  
     <div class="hero-container">
       <div class="hero-bg"></div>
-          <img :src="withBase('/img/hero.png')" alt="Hero 1" class="hero hero-left" data-aos="zoom-in" />
+          <img :src="withBase('/img/hero.png')" alt="Hero 1" class="hero hero-left"/>
     </div>
   <div class="container-code">
     <p class="code code-small" data-aos="zoom-in-up" data-aos-delay="200">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
@@ -76,7 +76,6 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
   width: 400px;
   max-width: 400px;
   height: auto;
-  position: relative;
 }
 
 .hero-bg {
@@ -84,11 +83,11 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
   width: 80%;
   height: 80%;
   border-radius: 50%;
-  background: linear-gradient(45deg,  #41d1ff 20%, #bd34fe 50%, #ff41a0 90%);
+  /* background: linear-gradient(45deg, #41d1ff 20%, #bd34fe 50%, #ff41a0 90%); */
+  background: linear-gradient(45deg, #41d1ff, #bd34fe);
   backdrop-filter: blur(40px);
   filter: blur(50px);
   z-index: -1;
-  transform: translateY(10%);
 }
 
 @media (min-width: 768px) {
@@ -113,7 +112,8 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
   }
 
   .hero {
-    width: 300px; 
+    width: 300px;
+    height: auto;
   }
 
   .hero-left {

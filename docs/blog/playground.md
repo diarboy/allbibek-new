@@ -51,7 +51,7 @@ import Chart from '../.vitepress/theme/components/Chart.vue';
     <p>Fade-in dari bawah dengan efek easing smooth</p>
   </div>
 
-  <blockquote data-aos="fade-up" style="text-align: center; font-size: 2rem; line-height: 2.5rem;">
+  <blockquote data-aos="fade-up" style="text-align: center; font-size: 1.8rem; line-height: 2rem;">
     <strong>We're continuously improving and adding new features. In the meantime, feel free to experiment and let us know what you think!</strong>
   </blockquote>
 </div>
@@ -113,7 +113,7 @@ Klik untuk melihat isi dari **Details Block**. Cocok untuk informasi yang tidak 
 
 @media (max-width: 768px) {
   .play-title h1 { font-size: 2rem; }
-  .play-title h2 { font-size: 2rem; }
+  .play-title h2 { font-size: 2rem; line-height: 2.5rem; }
   .play-title p { font-size: 1rem; }
 }
 

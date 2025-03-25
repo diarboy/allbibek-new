@@ -181,13 +181,13 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
-  html.dark .VPFeatures .item .VPFeature .box {
+  /* html.dark .VPFeatures .item .VPFeature .box {
     background: var(--feature-bg-soft);
     backdrop-filter: blur(45px);
     padding: 20px;
     margin: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+  } */
 
   /* Warna berbeda untuk setiap box */
   .VPFeatures .item:nth-child(1) .box { background-color: rgba(255, 235, 59, 0.2); }
