@@ -101,6 +101,7 @@ export default defineConfig({
             { text: 'Git Dev Workflows', link: '/blog/gitdev' },
             { text: 'Full-Stack Website', link: '/blog/full-stack' },
             { text: 'Dasar Regex', link: '/blog/regex' },
+            { text: 'Deploy a Django', link: '/blog/deploydjango' },
           ],
         },
         {
