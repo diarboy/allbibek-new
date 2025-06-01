@@ -102,7 +102,7 @@ export default defineConfig({
             { text: 'Full-Stack Website', link: '/blog/full-stack' },
             { text: 'Dasar Regex', link: '/blog/regex' },
             { text: 'Deploy a Django', link: '/blog/deploydjango' },
-            { text: 'Docker-Based Development', link: '/blog/docker' }
+            { text: 'Docker-Based Dev', link: '/blog/docker-dev' }
           ],
         },
         {

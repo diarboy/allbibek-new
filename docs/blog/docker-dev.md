@@ -2,7 +2,8 @@
 title: Docker-Based Development Workflow with GitHub Actions
 author: Ardi Syah
 ---
-# Local Development with Docker, MySQL, and GitHub Automation
+## Local Development with Docker, MySQL, and GitHub Automation
+
 ## 🐳 Apa Itu Docker?
 
 **Docker** adalah platform **open-source** yang digunakan untuk mengembangkan, menjalankan, dan mendistribusikan aplikasi dalam bentuk **container**. Singkatnya, Docker adalah alat yang memungkinkan kamu untuk membuat, menjalankan, dan membagi aplikasi dalam lingkungan terisolasi yang disebut container, tanpa khawatir tentang perbedaan konfigurasi di komputer berbeda.
