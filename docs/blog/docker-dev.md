@@ -1,7 +1,16 @@
 ---
-title: Docker-Based Development Workflow with GitHub Actions
+title: Docker-Based Development Workflow with GitHub Actions 🐳
 author: Ardi Syah
 ---
+
+<script setup>
+import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
+</script>
+
+# {{ $frontmatter.title }} <Badge type="info" text="guide" />
+
+<ReadingTime />
+
 ## Local Development with Docker, MySQL, and GitHub Automation
 
 ## 🐳 Apa Itu Docker?
