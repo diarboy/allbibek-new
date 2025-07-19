@@ -102,7 +102,8 @@ export default defineConfig({
             { text: 'Full-Stack Website', link: '/blog/full-stack' },
             { text: 'Dasar Regex', link: '/blog/regex' },
             { text: 'Deploy a Django', link: '/blog/deploydjango' },
-            { text: 'Docker-Based Dev', link: '/blog/docker-dev' }
+            { text: 'Docker-Based Dev', link: '/blog/docker-dev' },
+            { text: 'Linier Programming', link: '/blog/linier-programming' },
           ],
         },
         {
@@ -111,7 +112,7 @@ export default defineConfig({
           items: [
             { text: 'Introduction', link: '/blog/introduction' },
             { text: 'My First Post', link: '/blog/myfirstpost' },
-            { text: 'Linier Programming', link: '/blog/linier-programming' },
+            { text: 'Nostalgic', link: '/blog/nostalgic' },
           ],
         },
       ],
