@@ -1,5 +1,7 @@
 @import url('https://api.fontshare.com/v2/css?f=manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
     --vp-home-hero-name-color: transparent;
@@ -104,9 +106,38 @@
       display: inline-block;
     }
 
+    /* Custom font body text & justify global*/
       /* body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Manrope', sans-serif; 
+      }
+
+      .vp-doc p {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
       } */
+    /* Custom font body text & justify */
+
+    /* Custom font body text & justify each*/
+      .blog-content {
+        font-family: 'Lora', sans-serif; 
+      }
+
+      .blog-content p,
+      .blog-content li {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+        margin-bottom: 0.5em; /* agar judul rapat ke paragraf */
+        margin-top: 0.3em; 
+      }
+
+      .blog-content h2,
+      .blog-content h3 {
+        margin-bottom: 0.6em !important;  /* agar judul rapat ke paragraf */
+        margin-top: 1.2em !important;    /* agar jarak dari atas tetap cukup */
+      }
+    /* Custom font body text & justify */
 
     h1, h2, h3, h4, h5, h6,
     div[class*="vp-doc"] h1, 
