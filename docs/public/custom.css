@@ -106,38 +106,34 @@
       display: inline-block;
     }
 
-    /* Custom font body text & justify global*/
       /* body {
-        font-family: 'Manrope', sans-serif; 
-      }
-
-      .vp-doc p {
-        text-align: justify;
-        text-justify: inter-word;
-        hyphens: auto;
+        font-family: 'Inter', sans-serif;
       } */
-    /* Custom font body text & justify */
 
-    /* Custom font body text & justify each*/
+      /* Custom font body text & justify each*/
       .blog-content {
         font-family: 'Lora', sans-serif; 
       }
 
-      .blog-content p,
+      .blog-content p {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+        margin-bottom: 0.5em;
+        margin-top: 0.3em;
+      }
+
       .blog-content li {
         text-align: justify;
         text-justify: inter-word;
         hyphens: auto;
-        margin-bottom: 0.5em; /* agar judul rapat ke paragraf */
-        margin-top: 0.3em; 
+        line-height: 1.8;
       }
-
       .blog-content h2,
       .blog-content h3 {
-        margin-bottom: 0.6em !important;  /* agar judul rapat ke paragraf */
-        margin-top: 1.2em !important;    /* agar jarak dari atas tetap cukup */
+        margin-bottom: 0.3em ; /* agar judul rapat ke paragraf */
+        margin-top: 1.2em;    /* agar jarak dari atas tetap cukup */
       }
-    /* Custom font body text & justify */
 
     h1, h2, h3, h4, h5, h6,
     div[class*="vp-doc"] h1, 

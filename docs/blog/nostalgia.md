@@ -53,13 +53,13 @@ Melankolia bukan hanya tentang kesedihan, tetapi tentang *ketidakmampuan untuk m
 
 *Freud* juga memperkenalkan dua konsep penting, yaitu:
 
-**Fiksasi** adalah ketika sebagian diri kita tertahan di suatu tahap perkembangan emosional atau relasi, biasanya karena kebutuhan atau konflik yang belum terselesaikan. 
+**Fiksasi** (***Fixation***) adalah ketika sebagian diri kita tertahan di suatu tahap perkembangan emosional atau relasi, biasanya karena kebutuhan atau konflik yang belum terselesaikan. 
 
 Dalam fiksasi, seseorang bisa tampak dewasa secara usia, tapi emosinya masih terikat pada pengalaman lama seperti pola cinta yang selalu penuh drama, ketakutan ditinggalkan, atau terus mencari validasi seperti saat kecil dulu. Ini bukan karena seseorang tidak ingin berubah, tapi karena jiwanya belum selesai dengan fase itu.
 
-Selain fiksasi, *Freud* juga menjelaskan mekanisme **Regresi**, yakni sebuah proses dimana individu mundur ke tahap perkembangan sebelumnya sebagai cara bertahan terhadap tekanan emosional.
+Selain fiksasi, *Freud* juga menjelaskan mekanisme **Regresi** (***Regression***), yakni sebuah proses dimana individu mundur ke tahap perkembangan sebelumnya sebagai cara bertahan terhadap tekanan emosional.
 
-Seseorang yang merindukan masa lalu secara berlebihan (misalnya, masa kanak-kanak yang ideal) mungkin mengalami **regresi psikologis**. Mereka secara tidak sadar ingin kembali ke situasi dimana mereka merasa aman, dicintai, atau bebas dari tanggung jawab.
+Seseorang yang merindukan masa lalu secara berlebihan (*misalnya, masa kanak-kanak yang ideal*) mungkin mengalami **regresi psikologis**. Mereka secara tidak sadar ingin kembali ke situasi dimana mereka merasa aman, dicintai, atau bebas dari tanggung jawab.
 
 Jika kecenderungan seperti ini terlalu dominan, maka itu bisa disebut sebagai bentuk **perilaku maladaptif** atau pelarian dari tantangan realitas.
 
