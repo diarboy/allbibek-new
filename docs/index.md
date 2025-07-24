@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Whatever It Tech!
+title: WHATEVER IT TECH!
 
 hero:
   name: "allbibek." 
