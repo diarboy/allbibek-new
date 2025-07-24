@@ -112,7 +112,7 @@ export default defineConfig({
           items: [
             { text: 'Introduction', link: '/blog/introduction' },
             { text: 'My First Post', link: '/blog/myfirstpost' },
-            { text: 'Nostalgia Trap', link: '/blog/nostalgia-trap' },
+            { text: 'Nostalgia Trap', link: '/blog/nostalgic' },
           ],
         },
       ],
