@@ -81,7 +81,7 @@ export default defineConfig({
             items: [
               { text: 'GitHub', link: 'https://github.com/diarboy' },
               { text: 'Framer', link: 'https://allbibek.framer.website/' },
-              { text: 'Meta', link: 'https://facebook.com/ardibukan' },
+              { text: 'Instagram', link: 'https://instagram.com/ardibukan' },
             ],
           },
         ],

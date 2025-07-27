@@ -5,6 +5,7 @@ author: Ardi Syah
 
 <script setup>
 import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
+import ShareButtons from '../.vitepress/theme/components/ShareButtons.vue';
 </script>
 
 # {{ $frontmatter.title }} <Badge type="warning" text="blog" />
@@ -88,3 +89,5 @@ Orang yang selalu kembali pada kenangan traumatis, atau terus membangun situasi 
 Dalam konteks ini, nostalgia bukan hanya soal rindu terhadap waktu yang telah lewat, tapi tentang **pola psikologis yang belum selesai**, dan tentang bagaimana kita tanpa sadar **terus memeluk luka yang sama**.
 
 </div>
+
+<ShareButtons />

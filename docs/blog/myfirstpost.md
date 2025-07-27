@@ -83,7 +83,7 @@ Jika kita terus pasif dan `iya-iya saja`, maka masyarakat yang terjebak dalam lo
 
 **Tapi haruskah kita menyerah?** Tidak. Revolusi berpikir adalah awal dari revolusi yang sesungguhnya. Kita harus terus mempertanyakan, meski lelah. Kita harus terus mencari kebenaran, meski sedikit kesepian.
 
-## Menuju Kebenaran
+## Bebas Merdeka?
 
 >Karena satu-satunya jalan untuk benar-benar merdeka adalah membebaskan diri dari belenggu pola pikir yang menekan kita sejak lahir. Dan kebebasan itu harus diperjuangkan. Dengan pikiran, dengan kata-kata, dengan keberanian untuk tidak lagi tunduk.
 >
