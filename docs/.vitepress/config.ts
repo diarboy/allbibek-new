@@ -103,7 +103,6 @@ export default defineConfig({
             { text: 'Dasar Regex', link: '/blog/regex' },
             { text: 'Deploy a Django', link: '/blog/deploydjango' },
             { text: 'Docker-Based Dev', link: '/blog/docker-dev' },
-            { text: 'Linier Programming', link: '/blog/linier-programming' },
           ],
         },
         {

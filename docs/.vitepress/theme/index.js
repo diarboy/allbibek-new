@@ -22,7 +22,7 @@ export default {
     app.component('GalleryCarousel', GalleryCarousel);
     app.component('pdfmake', pdfmake);
     app.component('Blog', Blog);
-
+    
     if (typeof window !== 'undefined') {
       AOS.init({
         delay: 200,

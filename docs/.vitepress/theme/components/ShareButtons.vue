@@ -1,6 +1,5 @@
 <template>
   <div class="social-share">
-    Bagikan Artikel Ini:
     <a :href="`https://twitter.com/intent/tweet?url=${encodedPageUrl}&text=${encodedPageTitle}`" target="_blank" rel="noopener noreferrer">Twitter</a>
     <a :href="`https://www.facebook.com/sharer/sharer.php?u=${encodedPageUrl}`" target="_blank" rel="noopener noreferrer">Facebook</a>
     <a :href="`https://www.linkedin.com/shareArticle?mini=true&url=${encodedPageUrl}&title=${encodedPageTitle}`" target="_blank" rel="noopener noreferrer">LinkedIn</a>

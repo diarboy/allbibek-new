@@ -12,6 +12,7 @@
     "vitepress": "^1.6.3"
   },
   "dependencies": {
+    "@iconify/vue": "^5.0.0",
     "@vueuse/motion": "^3.0.3",
     "aos": "^2.3.4",
     "canvg": "^4.0.3",
