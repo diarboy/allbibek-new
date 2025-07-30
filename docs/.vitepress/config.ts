@@ -50,6 +50,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    appearance: 'auto',
     lastUpdated: {
       text: 'Updated on',
       formatOptions: {
@@ -110,7 +111,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Introduction', link: '/blog/introduction' },
-            { text: 'My First Post', link: '/blog/post/intonesia' },
+            { text: 'Intonesia', link: '/blog/post/intonesia' },
             { text: 'Nostalgia Trap', link: '/blog/post/nostalgia-trap' },
           ],
         },
