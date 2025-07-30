@@ -30,7 +30,7 @@ export default defineConfig({
       'link',
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
     ],
-    ['link', { rel: 'stylesheet', href: '/custom.css' }],
+    // ['link', { rel: 'stylesheet', href: '/custom.css' }],
     [
       'link',
       {
