@@ -13,16 +13,6 @@ import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
 import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
 </script>
 
-<div class="post-banner-wrapper">
-<img
-  :src="$frontmatter.banner"
-  alt="Banner image"
-  class="post-banner"
-/>
-</div>
-
-# {{ $frontmatter.title }} <Badge type="warning" text="blog" />
-
 <ReadingTime />
 <SocialShare/>
 
