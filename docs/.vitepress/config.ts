@@ -69,7 +69,7 @@ export default defineConfig({
           {
             text: 'Internal Link',
             items: [
-              { text: 'Blog', link: '/blog/introduction' },
+              { text: 'Blog', link: '/blog' },
               { text: 'Playground', link: '/blog/playground' },
               { text: 'Teams', link: '/team' },
               { text: 'Teammate', link: '/blog/teammate' },
