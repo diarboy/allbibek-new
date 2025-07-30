@@ -9,19 +9,13 @@ banner: https://images.unsplash.com/photo-1483706600674-e0c87d3fe85b?q=80&w=907&
 
 <script setup>
 import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
+import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
 </script>
 
-<div class="post-banner-wrapper">
-<img
-  :src="$frontmatter.banner"
-  alt="Banner image"
-  class="post-banner"
-/>
-</div>
-
-# {{ $frontmatter.title }} <Badge type="info" text="blog" /><Badge type="tip" text="^1.6.3" /><Badge type="warning" text="test" />
+<!-- # {{ $frontmatter.title }} <Badge type="info" text="blog" /><Badge type="tip" text="^1.6.3" /><Badge type="warning" text="test" /> -->
 
 <ReadingTime />
+<SocialShare/>
 
 ![Hero Blog](/img/hero1.png){style="width:200px; height:auto; margin: 0 auto -30px;"}
 

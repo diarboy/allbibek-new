@@ -1,5 +1,5 @@
 ---
-title: Cara Membuat Struktur Proyek B
+title: Cara Membuat Struktur Proyek Test
 description: Experiment, create, and refine interactive functions effortlessly. Explore coding, creativity, and problem-solving in a hands-on environment designed for learning and innovation.
 date: 2025-07-28
 author: Karra

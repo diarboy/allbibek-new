@@ -1,3 +1,21 @@
+---
+title: "Web Development Tutorials"
+description: Here you'll find practical guides and best practices for modern web development.
+date: March 10, 2025
+author: Ardi Syah
+tags: [Tutorial, Guide]
+banner: https://images.unsplash.com/photo-1712032575327-635d715c6ce5?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+---
+
+<script setup>
+import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
+import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
+</script>
+
+<ReadingTime />
+<SocialShare/>
+---
+
 # 🌐 Web Development Tutorials  
 
 Welcome to our comprehensive web development tutorials! Here you'll find practical guides and best practices for modern web development.  

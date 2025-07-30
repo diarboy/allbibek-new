@@ -1,15 +1,23 @@
 ---
-title: Deploy Django Backend ke EC2 dengan Gunicorn + Nginx + Supabase 🛠️
+title: "Deploy Django Backend ke EC2"
+description: Django adalah framework web berbasis Python yang bersifat open-source dan dirancang untuk memudahkan pembuatan aplikasi web dengan cepat, aman, dan terstruktur.
+date: April 24, 2025
 author: Ardi Syah
+tags: [Tutorial, Guide]
+banner: https://plus.unsplash.com/premium_photo-1687119905599-09fe40700389?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 <script setup>
-import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
+import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
+import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
 </script>
 
-# {{ $frontmatter.title }} <Badge type="info" text="guide" />
-
 <ReadingTime />
+<SocialShare/>
+
+---
+
+# Deploy Django Backend ke EC2 dengan Gunicorn + Nginx + Supabase 🛠️
 
 ## 🚀 1. Membuat Instance EC2
 

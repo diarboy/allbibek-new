@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Welcome to Blog!"
+title: WHAT A BLOGS?
 description: An immersive visual experience showcasing my creative works.
 hero:
   name: 

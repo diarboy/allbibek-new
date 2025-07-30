@@ -136,63 +136,6 @@
         margin-top: 1.2em;
       }
 
-      .post-banner-wrapper {
-        position: relative;
-        width: 100vw;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        margin-top: -20vh;
-        margin-bottom: 5vh;
-        overflow: hidden;
-        max-height: 30vh;
-      }
-      
-      .post-banner {
-        width: 100%;
-        max-height: 250px;
-        object-fit: cover;
-        /* border-radius: 12px; */
-        margin-bottom: 1.5rem;
-      }
-
-      .dark .post-banner {
-        filter: brightness(0.8);
-      }
-      
-      .post-title {
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-        gap: 0.75rem;
-        font-size: 2.25rem;
-        font-weight: 700;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        font-family: 'Manrope', sans-serif;
-      }
-      
-      .post-title .title-text {
-        flex-shrink: 1;
-        min-width: 0;
-      }
-      
-      .post-title .title-badges {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.25rem;
-        flex-shrink: 0;
-      }
-
-      @media (max-width: 600px) {
-        .post-title {
-          font-size: 1.5rem;
-          flex-wrap: wrap;
-        }
-      }
-      
-
     h1, h2, h3, h4, h5, h6,
     div[class*="vp-doc"] h1, 
     div[class*="vp-doc"] h2, 

@@ -1,6 +1,6 @@
 ---
-title: Cara Membuat Struktur Proyek A
-description: Experiment, create, and refine interactive functions effortlessly. Explore coding, creativity, and problem-solving in a hands-on environment designed for learning and innovation.
+title: Welcome to the Blog Post!
+description: Welcome to the blog section, where insights, tutorials, and experiences are shared.
 date: July 28, 2025
 author: Karra
 tags: [Blog]
@@ -13,30 +13,10 @@ import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
 import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
 </script>
 
-<img
-  :src="$frontmatter.banner"
-  alt="Banner image"
-  class="post-banner"
-/>
-
-<h1 class="post-title">
-  <span class="title-text">{{ $frontmatter.title }}</span>
-  <span class="title-badges">
-    <Badge
-      v-for="tag in $frontmatter.tags"
-      :key="tag"
-      type="warning"
-      :text="tag"
-    />
-  </span>
-</h1>
-
 <ReadingTime />
 <SocialShare/>
 
 ---
-
-# 📖 Welcome to the Blog Post!
 
 Welcome to the **Blog** section! 🎉 This space is dedicated to sharing insights, tutorials, case studies, and experiences related to **programming, design, technology, and more**.
 

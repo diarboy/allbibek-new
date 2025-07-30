@@ -1,4 +1,19 @@
-# 🏗️ Building a Full-Stack Website: Front-End & Back-End
+---
+title: "Building a Full-Stack Website: Front-End & Back-End"
+description: Designing the project structure, moving on to normalizing the database, setting up Supabase for backend services, and then exploring the frameworks and tools used for building both the front-end and back-end.
+date: March 09, 2025
+author: Ardi Syah
+tags: [Tutorial]
+banner: https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+---
+
+<script setup>
+import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
+import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
+</script>
+
+<ReadingTime />
+<SocialShare/>
 
 In this article, we will walk you through the process of building a full-stack website, covering the front-end and back-end aspects of the project. We will start by designing the project structure, moving on to normalizing the database, setting up Supabase for backend services, and then exploring the frameworks and tools used for building both the front-end and back-end.
 

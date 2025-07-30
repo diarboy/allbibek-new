@@ -40,13 +40,13 @@
         <div class="tags" v-if="post.tags">
           <span v-for="tag in post.tags" :key="tag">{{ tag }}</span>
         </div>
-        <p class="date">
+        <div class="date">
           {{ post.date }}
           <span v-if="post.author">
             &middot; {{ Array.isArray(post.author) ? `Authors: ${post.author.join(', ')}` : `${post.author}`
     }}
           </span>
-        </p>
+        </div>
       </article>
     </div>
     
@@ -162,13 +162,13 @@ function filterPosts(tag: string) {
 }
 
 .filter-tags button.active {
-  background-color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-brand-2);
   color: white;
   font-weight: 600;
 }
 
 .dark .filter-tags button.active {
-  background-color: var(--vp-c-brand-2);
+  background-color: var(--vp-c-sponsor);
   color: white;
 }
 
@@ -192,6 +192,7 @@ function filterPosts(tag: string) {
 .post-card h3 a {
   color: #fff;
   font-size: 2.5rem;
+  line-height: 1;
   text-decoration: none;
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
@@ -227,6 +228,7 @@ function filterPosts(tag: string) {
 }
 
 .post-card .date {
+  text-align: right;
   font-size: 1.2rem;
   font-weight: 500;
   font-family: 'Manrope', sans-serif;
@@ -254,12 +256,12 @@ function filterPosts(tag: string) {
 }
 
 .pagination button:hover:not(:disabled) {
-  background-color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-sponsor);
   color: white;
 }
 
 .pagination button.active {
-  background-color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-brand-2);
   color: white;
   font-weight: bold;
 }

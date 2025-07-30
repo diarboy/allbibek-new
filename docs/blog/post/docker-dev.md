@@ -1,17 +1,22 @@
 ---
-title: Docker-Based Development Workflow with GitHub Actions 🐳
+title: "Docker-Based Development Workflow with GitHub Actions"
+description: Docker adalah alat yang memungkinkan kamu untuk membuat, menjalankan, dan membagi aplikasi dalam lingkungan terisolasi yang disebut container, tanpa khawatir tentang perbedaan konfigurasi di komputer berbeda.
+date: June 1, 2025
 author: Ardi Syah
+tags: [Tutorial, Guide]
+banner: https://images.unsplash.com/photo-1697058149199-bc6d94639a82?q=80&w=966&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 <script setup>
-import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
+import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
+import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
 </script>
 
-# {{ $frontmatter.title }} <Badge type="info" text="guide" />
-
 <ReadingTime />
+<SocialShare/>
+---
 
-## Local Development with Docker, MySQL, and GitHub Automation
+# Local Development with Docker, MySQL, and GitHub Automation
 
 ## 🐳 Apa Itu Docker?
 

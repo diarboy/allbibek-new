@@ -1,16 +1,19 @@
 ---
-title: Github Dev Workflow 🚀
-author: Ardi Syah
+title: Github Dev Workflow
+description: Panduan lengkap untuk memahami alur kerja pengembangan dengan Git dan GitHub. Perintah-perintah dasar Git, praktik terbaik kolaborasi, dan langkah-langkah efisien dalam mengelola proyek melalui version control.
 date: March 9, 2025
+author: Ardi Syah
+tags: [Tutorial]
+banner: https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 <script setup>
-import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
+import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
+import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
 </script>
 
-# {{ $frontmatter.title }} <Badge type="info" text="guide" />
-
 <ReadingTime />
+<SocialShare/>
 
 ## 1. Clone Repository & Branch Default 🔄
 
@@ -117,7 +120,7 @@ Jika branch `dev` belum ada di remote, jalankan:
 ```bash
 git push origin dev
 ```
-Perintah ini akan mengunggah branch `dev` ke GitHub agar bisa diakses di StackBlitz atau komputer lain.
+Perintah ini akan mengunggah branch `dev` ke GitHub agar bisa diakses di komputer lain.
 
 - `git push origin dev` hanya akan mendorong branch `dev` ke remote (origin).
 - Tidak ada perubahan yang dikirim ke `main`, karena tidak ada perintah **merge** atau **rebase** ke `main`.

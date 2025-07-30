@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide
+      link: /blog
     - theme: alt
       text: See Gallery
       link: /gallery
