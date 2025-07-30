@@ -8,6 +8,7 @@ import Blog from './components/blog.vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Layout from './Layout.vue';
+import './custom.css'
 
 export default {
   ...DefaultTheme, Layout,

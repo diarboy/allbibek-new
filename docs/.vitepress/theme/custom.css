@@ -30,24 +30,24 @@
     }
 
     /* Custom Dark Scheme */
-    html.dark {
+    /* html.dark { */
+    @media (prefers-color-scheme: dark) {
+      :root {
       --vp-c-bg: #0d0d0d;
       --vp-c-bg-alt: #121212;
       --vp-c-text-1: #e0e0e0;
       --vp-c-text-2: #d0d0d0;
       
-        /* Tweak Warna Border & Shadow */
-      --vp-c-border: #222222;   /* Border lebih halus, tidak mencolok */
-      --vp-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Shadow lebih soft */
+      --vp-c-border: #222222;   
+      --vp-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
 
-      /* Tweak Warna Highlight Code Block */
-      --vp-code-block-bg: #181818; /* Background kode lebih soft */
-      --vp-code-text: #e6e6e6;     /* Warna teks kode agar nyaman */
-      --vp-code-keyword: #ffcc66;  /* Warna keyword lebih terang */
-      --vp-code-string: #99cc99;   /* String pakai hijau pastel */
-      --vp-code-comment: #888888;  /* Warna komentar lebih redup */
-      --vp-code-function: #82aaff; /* Warna fungsi lebih menonjol */
-      --vp-code-variable: #c792ea; /* Warna variabel lebih lembut */
+      --vp-code-block-bg: #181818; 
+      --vp-code-text: #e6e6e6;     
+      --vp-code-keyword: #ffcc66; 
+      --vp-code-string: #99cc99;   
+      --vp-code-comment: #888888;  
+      --vp-code-function: #82aaff; 
+      --vp-code-variable: #c792ea; 
 
       --vp-custom-block-tip-bg: var(--vp-c-tip-3);
       --vp-custom-block-info-bg: var(--vp-c-default-2);
@@ -55,7 +55,7 @@
       --vp-custom-block-danger-bg: var(--vp-c-danger-3);
       --vp-custom-block-caution-bg: var(--vp-c-caution-2);
       --vp-custom-block-details-bg: var(--vp-custom-block-info-bg);
-      
+      }
     }
 
     .VPNavBarTitle {
@@ -106,9 +106,10 @@
       display: inline-block;
     }
 
-      /* body {
-        font-family: 'Inter', sans-serif;
-      } */
+      body {
+        /* font-family: 'Inter', sans-serif; */
+        overflow-x: hidden;
+      }
 
       /* Custom font body text & justify each*/
       .blog-content {
@@ -134,6 +135,63 @@
         margin-bottom: 0.7em ;
         margin-top: 1.2em;
       }
+
+      .post-banner-wrapper {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        margin-top: -20vh;
+        margin-bottom: 5vh;
+        overflow: hidden;
+        max-height: 30vh;
+      }
+      
+      .post-banner {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        /* border-radius: 12px; */
+        margin-bottom: 1.5rem;
+      }
+
+      .dark .post-banner {
+        filter: brightness(0.8);
+      }
+      
+      .post-title {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-family: 'Manrope', sans-serif;
+      }
+      
+      .post-title .title-text {
+        flex-shrink: 1;
+        min-width: 0;
+      }
+      
+      .post-title .title-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+        flex-shrink: 0;
+      }
+
+      @media (max-width: 600px) {
+        .post-title {
+          font-size: 1.5rem;
+          flex-wrap: wrap;
+        }
+      }
+      
 
     h1, h2, h3, h4, h5, h6,
     div[class*="vp-doc"] h1, 
@@ -422,6 +480,10 @@ html.dark .profile-info h1 {
 .profile-info p, em {
   margin: 0.5rem 0;
   color: var(--vp-c-text-2);
+}
+
+html {
+  transition: background-color .25s ease, color .25s ease;
 }
 
 @media (max-width: 768px) {

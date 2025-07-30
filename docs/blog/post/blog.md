@@ -1,10 +1,38 @@
 ---
 title: Cara Membuat Struktur Proyek A
 description: Experiment, create, and refine interactive functions effortlessly. Explore coding, creativity, and problem-solving in a hands-on environment designed for learning and innovation.
-date: 2025-07-28
+date: July 28, 2025
 author: Karra
 tags: [Blog]
 banner: https://images.unsplash.com/photo-1713098564541-3e11d9898721?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
+---
+
+<script setup>
+import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
+import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
+</script>
+
+<img
+  :src="$frontmatter.banner"
+  alt="Banner image"
+  class="post-banner"
+/>
+
+<h1 class="post-title">
+  <span class="title-text">{{ $frontmatter.title }}</span>
+  <span class="title-badges">
+    <Badge
+      v-for="tag in $frontmatter.tags"
+      :key="tag"
+      type="warning"
+      :text="tag"
+    />
+  </span>
+</h1>
+
+<ReadingTime />
+<SocialShare/>
 
 ---
 
@@ -29,3 +57,5 @@ Welcome to the **Blog** section! 🎉 This space is dedicated to sharing insight
 - Follow for updates and **new content drops!**
 
 🚀 **Happy exploring!** 🎨💡
+
+![Photo of mountain range under clear sky](https://images.unsplash.com/photo-1501082183835-b7b33db89c3f?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#full)

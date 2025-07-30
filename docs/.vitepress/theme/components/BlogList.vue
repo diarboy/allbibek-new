@@ -6,14 +6,27 @@
       <small>To use the filter you need JavaScript to be enabled.</small>
     </noscript>
     <div class="filter-tags">
-      <button @click="filterPosts('')" id="all-tags">All</button>
-      <button v-for="tag in uniqueTags" :key="tag" @click="filterPosts(tag)">
+      <button
+        :class="{ active: selectedTag === null }"
+        @click="filterPosts('')"
+        id="all-tags"
+      >
+        All
+      </button>
+
+      <button
+        v-for="tag in uniqueTags"
+        :key="tag"
+        :class="{ active: selectedTag === tag }"
+        @click="filterPosts(tag)"
+      >
         {{ tag }}
       </button>
+
     </div>
     <div class="post-container">
       <article
-        v-for="post in filteredPosts"
+        v-for="post in paginatedPosts"
         :key="post.title"
         class="post-card"
         :style="post.banner ? `background-image: url(${post.banner})` : ''"
@@ -30,17 +43,63 @@
         <p class="date">
           {{ post.date }}
           <span v-if="post.author">
-            &middot; {{ Array.isArray(post.author) ? post.author.join(', ') : post.author }}
+            &middot; {{ Array.isArray(post.author) ? `Authors: ${post.author.join(', ')}` : `${post.author}`
+    }}
           </span>
         </p>
       </article>
     </div>
+    
+    <div class="pagination">
+      <button
+        :disabled="currentPage === 1"
+        @click="goToPage(currentPage - 1)"
+      >
+        ← Prev
+      </button>
+
+      <button
+        v-for="page in totalPages"
+        :key="page"
+        @click="goToPage(page)"
+        :class="{ active: currentPage === page }"
+      >
+        {{ page }}
+      </button>
+
+      <button
+        :disabled="currentPage === totalPages"
+        @click="goToPage(currentPage + 1)"
+      >
+        Next →
+      </button>
+    </div>
+
   </div>
 </template>
 
 <script setup lang="ts">
 import { data as posts } from './blog.data'
 import { computed, ref } from 'vue'
+
+const postsPerPage = 5
+const currentPage = ref(1)
+
+const paginatedPosts = computed(() => {
+  const start = (currentPage.value - 1) * postsPerPage
+  const end = start + postsPerPage
+  return filteredPosts.value.slice(start, end)
+})
+
+const totalPages = computed(() => {
+  return Math.ceil(filteredPosts.value.length / postsPerPage)
+})
+
+function goToPage(page: number) {
+  if (page >= 1 && page <= totalPages.value) {
+    currentPage.value = page
+  }
+}
 
 const selectedTag = ref(null)
 
@@ -72,21 +131,45 @@ function filterPosts(tag: string) {
 
 <style scoped>
 .blog-list {
-  padding: 1rem 2rem;
+  padding: 1rem 0;
 }
 
+.blog-list small {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: var(--vp-c-text-2);
+  letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+
 .filter-tags {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .filter-tags button {
+  margin-top: 0.8rem;
   margin-right: 0.5rem;
   padding: 0.25rem 0.75rem;
   border: none;
-  background-color: #e0e0e0;
+  background-color: var(--vp-custom-block-info-bg);
   cursor: pointer;
   border-radius: 12px;
   font-size: 0.875rem;
+}
+
+.filter-tags button.active {
+  background-color: var(--vp-c-brand-1);
+  color: white;
+  font-weight: 600;
+}
+
+.dark .filter-tags button.active {
+  background-color: var(--vp-c-brand-2);
+  color: white;
 }
 
 .post-container {
@@ -96,7 +179,7 @@ function filterPosts(tag: string) {
 }
 
 .post-card {
-  background-color: #f9f9f9;
+  background-color: var(--vp-custom-block-info-bg);
   background-size: cover;
   background-position: center;
   border-radius: 1rem;
@@ -111,15 +194,19 @@ function filterPosts(tag: string) {
   font-size: 2.5rem;
   text-decoration: none;
   font-family: 'Manrope', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   }
 
 .post-card p {
   color: #fff;
   font-size: 1rem;
   text-decoration: none;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: 0.09em;
+  padding-right: 2rem;
+  max-width: 60ch;
   }
 
 .post-card .tags {
@@ -132,7 +219,7 @@ function filterPosts(tag: string) {
 }
 
 .post-card .tags span {
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--card-text-bg-soft);
   color: #fff;
   padding: 0.25rem 0.5rem;
   border-radius: 0.75rem;
@@ -140,11 +227,46 @@ function filterPosts(tag: string) {
 }
 
 .post-card .date {
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   font-weight: 500;
+  font-family: 'Manrope', sans-serif;
   color: #eee;
-  position: absolute;
-  bottom: 1rem;
-  right: 2rem;
+  position: relative;
+  letter-spacing: 0.09em;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  background-color: var(--vp-custom-block-info-bg);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: var(--vp-c-brand-1);
+  color: white;
+}
+
+.pagination button.active {
+  background-color: var(--vp-c-brand-1);
+  color: white;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 </style>

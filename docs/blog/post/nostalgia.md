@@ -1,13 +1,25 @@
 ---
 title: "The Nostalgia Trap"
+description: Apakah mungkin orang yang terus-menerus merindukan masa lalu sebenarnya sedang mencintai lukanya sendiri?
+date: July 29, 2025
 author: Ardi Syah
+tags: [Blog]
+banner: https://images.unsplash.com/photo-1528569937393-ee892b976859?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 <script setup>
-import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
+import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
 // import ShareButtons from '../.vitepress/theme/components/ShareButtons.vue';
-import SocialShare from '../.vitepress/theme/components/SocialShare.vue';
+import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
 </script>
+
+<div class="post-banner-wrapper">
+<img
+  :src="$frontmatter.banner"
+  alt="Banner image"
+  class="post-banner"
+/>
+</div>
 
 # {{ $frontmatter.title }} <Badge type="warning" text="blog" />
 

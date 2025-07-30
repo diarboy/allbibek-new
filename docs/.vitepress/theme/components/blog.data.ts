@@ -32,7 +32,7 @@ export default createContentLoader('blog/post/*.md', {
 
 function formatDate(raw: string): string {
   const date = new Date(raw)
-  return date.toLocaleDateString('id-ID', {
+  return date.toLocaleDateString('en-EN', {
     year: 'numeric',
     month: 'long',
     day: '2-digit'

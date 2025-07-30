@@ -1,12 +1,23 @@
 ---
 title: Intonesia
+description: Menjadi orang yang iya-iya saja di Indonesia jauh lebih mudah. Percaya pada ilmu pengetahuan bukan hanya sulit, tapi juga bisa menjadi beban.
+date: February 20, 2025
 author: Ardi Syah
-date: 20 Februari 2025
+tags: [Blog]
+banner: https://images.unsplash.com/photo-1483706600674-e0c87d3fe85b?q=80&w=907&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 <script setup>
-import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
+import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
 </script>
+
+<div class="post-banner-wrapper">
+<img
+  :src="$frontmatter.banner"
+  alt="Banner image"
+  class="post-banner"
+/>
+</div>
 
 # {{ $frontmatter.title }} <Badge type="info" text="blog" /><Badge type="tip" text="^1.6.3" /><Badge type="warning" text="test" />
 
