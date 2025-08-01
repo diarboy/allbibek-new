@@ -6,6 +6,7 @@ const { frontmatter } = useData()
 <template>
   <div v-if="frontmatter.banner" class="post-banner-wrapper">
     <img :src="frontmatter.banner" alt="Banner" class="post-banner" />
+    <div class="banner-gradient-overlay" />
   </div>
 
   <h1 class="post-title">
@@ -32,7 +33,7 @@ const { frontmatter } = useData()
     margin-right: -50vw;
     margin-top: -20vh;
     overflow: hidden;
-    max-height: 25vh;
+    max-height: 30vh;
 }
 
 .post-banner {
@@ -46,15 +47,29 @@ const { frontmatter } = useData()
     filter: brightness(0.8);
 }
 
+.banner-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--vp-c-bg));
+  pointer-events: none;
+}
+
+.dark .banner-gradient-overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--vp-c-bg));
+}
+
+
 .post-title {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     gap: 0.75rem;
     font-size: 2.5rem;
-    line-height: 0.9;
+    line-height: 1.2;
     font-weight: 900;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-family: 'Manrope', sans-serif;
 }
@@ -72,10 +87,18 @@ const { frontmatter } = useData()
 }
 
 @media (max-width: 600px) {
-    .post-title {
+  .post-title {
     font-size: 2rem;
     flex-wrap: wrap;
-    line-height: 1;
-    }
+    line-height: 1.2;
+  }
+
+.post-banner-wrapper {
+      max-height: 25vh;
+}
+
+  .banner-gradient-overlay {
+    height: 200px;
+  }
 }
 </style>

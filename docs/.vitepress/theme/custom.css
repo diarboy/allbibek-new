@@ -30,6 +30,31 @@
     }
 
     /* Custom Dark Scheme */
+    html.dark {
+      --vp-c-bg: #0d0d0d;
+      --vp-c-bg-alt: #121212;
+      --vp-c-text-1: #e0e0e0;
+      --vp-c-text-2: #d0d0d0;
+      
+      --vp-c-border: #222222;   
+      --vp-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
+
+      --vp-code-block-bg: #181818; 
+      --vp-code-text: #e6e6e6;     
+      --vp-code-keyword: #ffcc66; 
+      --vp-code-string: #99cc99;   
+      --vp-code-comment: #888888;  
+      --vp-code-function: #82aaff; 
+      --vp-code-variable: #c792ea; 
+
+      --vp-custom-block-tip-bg: var(--vp-c-tip-3);
+      --vp-custom-block-info-bg: var(--vp-c-default-2);
+      --vp-custom-block-warning-bg: var(--vp-c-warning-2);
+      --vp-custom-block-danger-bg: var(--vp-c-danger-3);
+      --vp-custom-block-caution-bg: var(--vp-c-caution-2);
+      --vp-custom-block-details-bg: var(--vp-custom-block-info-bg);
+      }
+
     /* html.dark { */
     @media (prefers-color-scheme: dark) {
       :root {
@@ -349,7 +374,7 @@
   .VPSidebarItem.level-4 .text,
   .VPSidebarItem.level-5 .text 
   {
-    color: var(--vp-c-text-1) !important;
+    color: var(--vp-c-caut-1) !important;
   }
   .VPSidebarItem.level-1.is-active .text {
     color:  #3dd68c !important;
@@ -357,9 +382,14 @@
 	.VPLocalNav .menu-icon,
   .VPLocalNav .menu-text,
   .VPLocalNavOutlineDropdown .menu-text {
-    color: var(--vp-c-text-1) !important;
-	  fill: var(--vp-c-text-1) !important;
-  }  
+    color: var(--vp-c-text-2) !important;
+  }
+
+  html.dark .VPLocalNav .menu-icon,
+  html.dark .VPLocalNav .menu-text,
+  html.dark .VPLocalNavOutlineDropdown .menu-text {
+    color: #3dd68c !important;
+  }
 
   .responsive-flex {
     flex-direction: column;

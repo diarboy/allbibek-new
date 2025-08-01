@@ -205,12 +205,15 @@ function filterPosts(tag: string) {
 }
 
 .post-card h3 a {
+  display: inline-block;
+  max-width: 90%;
+  word-break: break-word;
   color: #fff;
-  font-size: 2.5rem;
-  line-height: 1;
+  font-size: 2rem;
+  line-height: 1.1;
   text-decoration: none;
   font-family: 'Manrope', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   }
 
 .post-card p {
@@ -244,12 +247,12 @@ function filterPosts(tag: string) {
 
 .post-card .date {
   text-align: right;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: 'Manrope', sans-serif;
-  color: #eee;
+  color: var(--vp-c-text-1);
   position: relative;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.12em;
 }
 
 .pagination {
