@@ -354,10 +354,11 @@
   .VPSidebarItem.level-1.is-active .text {
     color:  #3dd68c !important;
   }
-
+	.VPLocalNav .menu-icon,
   .VPLocalNav .menu-text,
   .VPLocalNavOutlineDropdown .menu-text {
-    color: var(--vp-c-text-1) !important;
+    color: #fff !important;
+		fill: #fff !important;
   }  
 
   .responsive-flex {
