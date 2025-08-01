@@ -357,8 +357,8 @@
 	.VPLocalNav .menu-icon,
   .VPLocalNav .menu-text,
   .VPLocalNavOutlineDropdown .menu-text {
-    color: #fff !important;
-		fill: #fff !important;
+    color: var(--vp-c-text-1) !important;
+	  fill: var(--vp-c-text-1) !important;
   }  
 
   .responsive-flex {
