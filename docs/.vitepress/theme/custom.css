@@ -349,11 +349,16 @@
   .VPSidebarItem.level-4 .text,
   .VPSidebarItem.level-5 .text 
   {
-    color: var(--vp-c-text-2) !important;
+    color: var(--vp-c-text-1) !important;
   }
   .VPSidebarItem.level-1.is-active .text {
     color:  #3dd68c !important;
   }
+
+  .VPLocalNav .menu-text,
+  .VPLocalNavOutlineDropdown .menu-text {
+    color: var(--vp-c-text-1) !important;
+  }  
 
   .responsive-flex {
     flex-direction: column;
@@ -422,7 +427,7 @@ html.dark .profile-info h1 {
 
 .profile-info p, em {
   margin: 0.5rem 0;
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-1);
 }
 
 html {

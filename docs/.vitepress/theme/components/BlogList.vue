@@ -189,6 +189,22 @@ function filterPosts(tag: string) {
   min-height: 250px;
 }
 
+.post-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+  border-radius: 1rem;
+  backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.post-card > * {
+  position: relative;
+  z-index: 1;
+}
+
 .post-card h3 a {
   color: #fff;
   font-size: 2.5rem;

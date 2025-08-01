@@ -31,17 +31,15 @@ const { frontmatter } = useData()
     margin-left: -50vw;
     margin-right: -50vw;
     margin-top: -20vh;
-    margin-bottom: 5vh;
     overflow: hidden;
-    max-height: 30vh;
+    max-height: 25vh;
 }
 
 .post-banner {
     width: 100%;
     max-height: 250px;
     object-fit: cover;
-    /* border-radius: 12px; */
-    margin-bottom: 1.5rem;
+    /* border-radius: 12px; */    
 }
 
 .dark .post-banner {
@@ -54,6 +52,7 @@ const { frontmatter } = useData()
     flex-wrap: nowrap;
     gap: 0.75rem;
     font-size: 2.5rem;
+    line-height: 0.9;
     font-weight: 900;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -76,7 +75,7 @@ const { frontmatter } = useData()
     .post-title {
     font-size: 2rem;
     flex-wrap: wrap;
-    line-height: 1.2;
+    line-height: 1;
     }
 }
 </style>
