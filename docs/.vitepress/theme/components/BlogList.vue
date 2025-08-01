@@ -195,7 +195,6 @@ function filterPosts(tag: string) {
   inset: 0;
   background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
   border-radius: 1rem;
-  backdrop-filter: blur(1px);
   background: rgba(0, 0, 0, 0.3);
   z-index: 0;
 }
