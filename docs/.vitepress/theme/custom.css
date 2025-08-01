@@ -56,7 +56,7 @@
       }
 
     /* html.dark { */
-    @media (prefers-color-scheme: dark) {
+    /* @media (prefers-color-scheme: dark) {
       :root {
       --vp-c-bg: #0d0d0d;
       --vp-c-bg-alt: #121212;
@@ -81,7 +81,7 @@
       --vp-custom-block-caution-bg: var(--vp-c-caution-2);
       --vp-custom-block-details-bg: var(--vp-custom-block-info-bg);
       }
-    }
+    } */
 
     .VPNavBarTitle {
       font-family: 'Comfortaa', sans-serif;
