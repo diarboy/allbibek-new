@@ -82,5 +82,5 @@ Boost your app's performance with these best practices.
 ::: info 🔧 Developer Tools
 **Recommended Tooling**
 Enhance your workflow with top developer tools.
-[Read more](/blog/introduction)
+[Read more](/blog/post/introduction)
 :::
