@@ -99,6 +99,8 @@ Memahami repetition compulsion adalah langkah pertama untuk keluar dari nostalgi
 - Apa yang ingin saya **perbaiki** atau **ubah** dari masa lalu?
 - Bagaimana saya bisa mendapatkan closure tanpa terus mengulang pola yang sama?
 
+![Reminiscenes](/img/post-01.jpg){style="width:100%; height:auto; object-fit: cover; border-radius:14px; margin: 0 auto 10px;"}
+
 Freud memberikan kita lensa yang kuat untuk memahami mengapa beberapa orang tampak **mencintai luka mereka sendiri** melalui nostalgia yang berlebihan. Melalui konsep melankolia, fiksasi, secondary gain, dan repetition compulsion, kita bisa melihat bahwa nostalgia patologis bukan hanya tentang merindukan masa lalu, tetapi tentang pola psikologis yang belum selesai.
 
 ***Kesadaran adalah langkah pertama***. Memahami bahwa nostalgia bisa menjadi mekanisme bertahan yang tidak sehat memungkinkan kita untuk:
@@ -115,3 +117,7 @@ Memahami bahwa tidak semua nostalgia adalah **pelarian**, dan tidak semua nostal
 Mengenang masa lalu bisa menjadi kekuatan atau jebakan, tergantung dari kesadaran kita. *Apakah kita ingin mengulangnya karena belum selesai? Atau kita mengenang karena sudah berdamai?* Karena nostalgia yang sehat lahir dari pemahaman, bukan dari penghindaran. Ia bukan untuk kembali, tapi untuk melangkah maju dengan lebih utuh.
 
 </div>
+
+---
+
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/ywHp_qH2rqA?si=Bkao-INSXj6tgIzj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

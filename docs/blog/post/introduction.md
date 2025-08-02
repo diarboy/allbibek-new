@@ -8,16 +8,6 @@ banner: https://images.unsplash.com/photo-1713098564541-3e11d9898721?q=80&w=1932
 
 ---
 
-<script setup>
-import ReadingTime from '../../.vitepress/theme/components/ReadingTime.vue';
-import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
-</script>
-
-<ReadingTime />
-<SocialShare/>
-
----
-
 Welcome to the **Blog** section! 🎉 This space is dedicated to sharing insights, tutorials, case studies, and experiences related to **programming, design, technology, and more**.
 
 ## 🔍 What You'll Find Here
@@ -27,6 +17,9 @@ Welcome to the **Blog** section! 🎉 This space is dedicated to sharing insight
 ✅ **Industry Trends** – Updates on new trends, tools, and best practices.  
 
 ## 🚀 How to Navigate
+
+<video alt="Red flower wakes up" controls="" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"></video>
+
 🔹 Browse the list of blog posts on the sidebar.  
 🔹 Use the **search function** to find topics of interest.  
 🔹 Check out the **latest and most popular** articles.  

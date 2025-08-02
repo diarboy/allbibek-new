@@ -110,7 +110,7 @@ export default defineConfig({
           text: 'Blog',
           collapsed: true,
           items: [
-            { text: 'Introduction', link: '/blog/introduction' },
+            { text: 'Introduction', link: '/blog/post/introduction' },
             { text: 'Intonesia', link: '/blog/post/intonesia' },
             { text: 'Nostalgia Trap', link: '/blog/post/nostalgia-trap' },
           ],

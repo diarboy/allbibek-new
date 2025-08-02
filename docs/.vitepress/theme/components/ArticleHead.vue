@@ -1,9 +1,28 @@
 <script setup>
-import { useData } from 'vitepress'
-const { frontmatter } = useData()
+import { useData, useRoute } from 'vitepress'
+const { frontmatter, site } = useData()
+const route = useRoute()
+
+const pageUrl = `${site.value.base}${route.path}`.replace(/\/index$/, '')
+const fullUrl = `https://allbibek.ardisyh.site${pageUrl}`
+
 </script>
 
 <template>
+  <Head>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" :content="frontmatter.title" />
+    <meta property="og:description" :content="frontmatter.description" />
+    <meta property="og:image" :content="frontmatter.banner" />
+    <meta property="og:url" :content="fullUrl" />
+    <meta property="og:site_name" content="frontmatter.title" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" :content="frontmatter.title" />
+    <meta name="twitter:description" :content="frontmatter.description" />
+    <meta name="twitter:image" :content="frontmatter.banner" />
+  </Head>
+  
   <div v-if="frontmatter.banner" class="post-banner-wrapper">
     <img :src="frontmatter.banner" alt="Banner" class="post-banner" />
     <div class="banner-gradient-overlay" />
