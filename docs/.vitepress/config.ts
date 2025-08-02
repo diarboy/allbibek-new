@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   title: 'allbibek.',
-  description: 'Pixel-perfect!',
+  description: 'WHTEVRTECH!',
   base: '/',
   
   markdown: {
@@ -50,7 +50,6 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    appearance: 'auto',
     lastUpdated: {
       text: 'Updated on',
       formatOptions: {

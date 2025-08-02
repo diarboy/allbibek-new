@@ -84,7 +84,7 @@ Meskipun telah `merdeka` dari penjajahan fisik, kita masih terjajah dalam cara b
 
 Mungkin dukun sudah sedikit, tapi mereka menjelma jadi influencer, abang-abangan, penjual agama, atau semua yang menjual solusi instan untuk menyelesaikan masalah yang bisa diselesaikan dengan skeptisme, logika, dan ilmu pengetahuan.
 
-Jika kita terus pasif dan `iya-iya saja`, maka masyarakat yang terjebak dalam logika mistika akan melahirkan pemerintah dengan cara berpikir serupa. Contohnya? Anggaran riset dan anggaran pendidikan, yang lebih kecil daripada biaya rapat DPR di hotel-hotel. Akademisi dikecilkan karena dianggap <mark>tidak sesuai realita,</mark> sementara paranormal tetap dipercaya lebih dari ilmu.
+Jika kita terus pasif dan `iya-iya saja`, maka masyarakat yang terjebak dalam logika mistika akan melahirkan pemerintah dengan cara berpikir serupa. Contohnya? Anggaran riset dan anggaran pendidikan, yang lebih kecil daripada biaya rapat DPR di hotel-hotel. Akademisi dikecilkan karena dianggap <mark>tidak sesuai realita</mark>, sementara paranormal tetap dipercaya lebih dari ilmu.
 
 **Tapi haruskah kita menyerah?** Tidak. Revolusi berpikir adalah awal dari revolusi yang sesungguhnya. Kita harus terus mempertanyakan, meski lelah. Kita harus terus mencari kebenaran, meski sedikit kesepian.
 

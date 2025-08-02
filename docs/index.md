@@ -32,7 +32,7 @@ features:
   - icon: 📚
     title: Comprehensive Guides
     details: Access detailed tutorials and guides covering various development topics.
-    link: /blog/post/introduction
+    link: /guide
     linkText: Read More
   - icon: 🔧
     title: Best Practices

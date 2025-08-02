@@ -25,7 +25,7 @@ Namun, ketika kecenderungan untuk hidup dalam kenangan menjadi pola yang berulan
 
 > ***Apakah mungkin orang yang terus-menerus merindukan masa lalu sebenarnya sedang mencintai lukanya sendiri?***
 
-*Sigmund Freud*, melalui teori-teorinya tentang melankolia, fiksasi, dan konsep secondary gain, memberikan perspektif yang menarik untuk memahami dinamika psikologis di balik nostalgia yang berlebihan. Meskipun Freud tidak secara eksplisit membahas nostalgia sebagai fenomena tersendiri, analisisnya tentang bagaimana individu dapat mempertahankan penderitaan karena memberikan keuntungan psikologis tertentu sangat relevan untuk memahami `Nostalgia Trap`.
+*Sigmund Freud*, melalui teori-teorinya tentang melankolia, fiksasi, dan konsep secondary gain, memberikan perspektif yang menarik untuk memahami dinamika psikologis di balik nostalgia yang berlebihan. Meskipun Freud tidak secara eksplisit membahas nostalgia sebagai fenomena tersendiri, analisisnya tentang bagaimana individu dapat mempertahankan penderitaan karena memberikan keuntungan psikologis tertentu sangat relevan untuk memahami **Nostalgia Trap**.
 Artikel ini akan mengeksplorasi bagaimana konsep-konsep psikoanalitik Freud dapat membantu kita memahami mengapa beberapa orang tampak terjebak dalam siklus kerinduan yang tidak produktif, dan bagaimana nostalgia dapat berubah dari emosi yang sehat menjadi mekanisme psikologis yang menghambat.
 
 ## Perspektif Freudian
@@ -38,9 +38,13 @@ Pada era *Freud*, nostalgia terkadang dipandang sebagai gangguan medis yang nyat
 
 Dalam karyanya yang terkenal, **Mourning and Melancholia (1917)**, *Freud* membedakan antara dua reaksi terhadap kehilangan yang sangat relevan untuk memahami nostalgia patologis, yaitu:
 
-**Mourning (duka)** adalah proses normal dan sehat, dimana individu secara bertahap melepaskan keterikatannya terhadap objek yang hilang (baik orang, tempat, masa, atau harapan). Ini adalah proses kesedihan yang meski menyakitkan, tetap memungkinkan individu untuk kembali menjalani hidup secara fungsional.
+* **Mourning (duka)** 
+    
+    Proses normal dan sehat, dimana individu secara bertahap melepaskan keterikatannya terhadap objek yang hilang (baik orang, tempat, masa, atau harapan). Ini adalah proses kesedihan yang meski menyakitkan, tetap memungkinkan individu untuk kembali menjalani hidup secara fungsional.
 
-**Melancholia (melankolia)** adalah bentuk kehilangan yang bersifat patologis, dimana individu gagal melepaskan objek yang hilang, dan malah **mengidentifikasi ego-nya dengan objek tersebut**. Yang menarik dari melankolia menurut *Freud* adalah bahwa rasa kehilangan tidak diarahkan keluar (ke objek yang hilang), tetapi malah **ditarik ke dalam**, menjadi semacam *self-reproach* (tuduhan terhadap diri sendiri), *kritik diri ekstrem*, atau bahkan *penghinaan diri* yang tidak selalu disadari. *Freud* menyebutnya sebagai:
+* **Melancholia (melankolia)**
+    
+    Bentuk kehilangan yang bersifat patologis, dimana individu gagal melepaskan objek yang hilang, dan malah **mengidentifikasi ego-nya dengan objek tersebut**. Yang menarik dari melankolia menurut *Freud* adalah bahwa rasa kehilangan tidak diarahkan keluar (ke objek yang hilang), tetapi malah **ditarik ke dalam**, menjadi semacam *self-reproach* (tuduhan terhadap diri sendiri), *kritik diri ekstrem*, atau bahkan *penghinaan diri* yang tidak selalu disadari. *Freud* menyebutnya sebagai:
 
 > *“the shadow of the object fell upon the ego.”*
 
@@ -103,7 +107,9 @@ Memahami repetition compulsion adalah langkah pertama untuk keluar dari nostalgi
 
 Freud memberikan kita lensa yang kuat untuk memahami mengapa beberapa orang tampak **mencintai luka mereka sendiri** melalui nostalgia yang berlebihan. Melalui konsep melankolia, fiksasi, secondary gain, dan repetition compulsion, kita bisa melihat bahwa nostalgia patologis bukan hanya tentang merindukan masa lalu, tetapi tentang pola psikologis yang belum selesai.
 
-***Kesadaran adalah langkah pertama***. Memahami bahwa nostalgia bisa menjadi mekanisme bertahan yang tidak sehat memungkinkan kita untuk:
+### Kesadaran adalah langkah pertama
+
+Memahami bahwa nostalgia bisa menjadi mekanisme bertahan yang tidak sehat memungkinkan kita untuk:
 
 - Mengidentifikasi apa yang sebenarnya kita rindukan, bukan peristiwa atau tokohnya, tetapi perasaan atau kebutuhan di baliknya.
 - Mencari cara memenuhi kebutuhan itu di masa kini, tanpa harus kembali ke masa lalu.

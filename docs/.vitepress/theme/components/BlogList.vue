@@ -1,4 +1,3 @@
-// .vitepress/theme/BlogList.vue
 <template>
   <div class="blog-list">
     <small>From newest to oldest ↓</small>
@@ -33,8 +32,8 @@
       >
         <h3>
           <a :href="post.url">
-            {{ post.title }} →
-          </a>
+            {{ post.title }}<Icon icon="iconamoon:arrow-top-right-1-bold" class="icon" />
+          </a> 
         </h3>
         <p v-if="post.description">{{ post.description }}</p>
         <div class="tags" v-if="post.tags">
@@ -81,6 +80,7 @@
 <script setup lang="ts">
 import { data as posts } from './blog.data'
 import { computed, ref } from 'vue'
+import { Icon } from '@iconify/vue'
 
 const postsPerPage = 5
 const currentPage = ref(1)
@@ -187,6 +187,26 @@ function filterPosts(tag: string) {
   color: #000;
   position: relative;
   min-height: 250px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.post-card:hover {
+  transform: scale(1.03);
+  filter: brightness(1.3);
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin-left: 0.25em;
+}
+
+.post-card:hover .icon {
+  transform: scale(1.5);
+  color: var(--vp-c-sponsor);
 }
 
 .post-card::before {
@@ -250,7 +270,7 @@ function filterPosts(tag: string) {
   font-size: 1rem;
   font-weight: 500;
   font-family: 'Manrope', sans-serif;
-  color: var(--vp-c-text-1);
+  color: white;
   position: relative;
   letter-spacing: 0.12em;
 }
