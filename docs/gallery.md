@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: What a Blog
-      link: /blog/introduction
+      link: /blog/post/introduction
     - theme: sponsor
       text: Hire Me
       link: /contact
