@@ -1,6 +1,6 @@
 ---
 title: "The Nostalgia Trap"
-description: Apakah mungkin orang yang terus-menerus merindukan masa lalu sebenarnya sedang mencintai lukanya sendiri?
+description: A Freudian reflection on how unresolved grief and repressed memories create a trap of reminiscence, binding us to the life we thought we’d left behind.
 date: July 29, 2025
 author: Ardi Syah
 tags: [Blog]
