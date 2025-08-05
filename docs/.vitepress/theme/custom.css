@@ -171,7 +171,8 @@
       @media (max-width: 768px) {
         .blog-content, .blog-content p {
           font-weight: 300;
-          line-height: 1.6em;
+          font-size: 15px;
+          line-height: 1.5em;
         }
         .blog-content li {
           line-height: 1.4;
