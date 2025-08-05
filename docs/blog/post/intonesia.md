@@ -55,7 +55,7 @@ Di Indonesia, jalan hidup sudah diatur. Tujuan hidup bukan soal passion atau ket
   <img src="/img/hero2.png" alt="Hero2" width="300">
 </p> -->
 
-![Hero Blog](/img/hero2.png){style="width:300px; height:auto; margin: 0 auto -50px;"}
+![Hero Blog](/img/hero2.png){style="width:300px; height:auto; margin: 0 auto -30px;"}
 
 <p style="text-align: center; font-style: italic; font-weight: bold;"> Cukup berdoa dan bersedekah saja! 🧘🏻 </p>
 

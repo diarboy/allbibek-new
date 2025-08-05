@@ -1,6 +1,7 @@
 @import url('https://api.fontshare.com/v2/css?f=manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'); original font */ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
@@ -142,7 +143,7 @@
 
       /* Custom font body text & justify each*/
       .blog-content {
-        font-family: 'Inter', sans-serif; 
+        font-family: 'Inter', sans-serif;
       }
 
       .blog-content p {
@@ -159,10 +160,28 @@
         hyphens: auto;
         line-height: 1.8;
       }
+      
       .blog-content h2,
       .blog-content h3 {
         margin-bottom: 0.7em ;
         margin-top: 1.2em;
+      }
+
+      /* ukuran font mobile artikel */
+      @media (max-width: 768px) {
+        .blog-content, .blog-content p {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 1.5em;
+        }
+        .blog-content li {
+          line-height: 1.4;
+        }
+        .blog-content h2,
+        .blog-content h3 {
+          margin-bottom: 0.5em ;
+          margin-top: 0.8em;
+        }
       }
 
     h1, h2, h3, h4, h5, h6,
