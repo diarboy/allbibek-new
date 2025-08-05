@@ -168,7 +168,7 @@
       }
 
       /* ukuran font mobile artikel */
-      @media (max-width: 768px) {
+      /* @media (max-width: 768px) {
         .blog-content, .blog-content p {
           font-weight: 300;
           font-size: 15px;
@@ -182,7 +182,7 @@
           margin-bottom: 0.5em ;
           margin-top: 0.8em;
         }
-      }
+      } */
 
     h1, h2, h3, h4, h5, h6,
     div[class*="vp-doc"] h1, 
@@ -214,6 +214,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 20px !important;
   }
   
   .title-alt {
@@ -221,6 +222,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .details {
+    font-size: 18px !important;
+    font-weight: 300 !important;
   }
 
   html.dark .title-alt {
