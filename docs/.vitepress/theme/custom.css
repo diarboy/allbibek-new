@@ -170,8 +170,8 @@
       /* ukuran font mobile artikel */
       @media (max-width: 768px) {
         .blog-content, .blog-content p {
-          font-weight: 400;
-          font-size: 16px;
+          font-weight: 300;
+          font-size: 15px;
           line-height: 1.5em;
         }
         .blog-content li {
@@ -214,7 +214,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 20px !important;
+    /* font-size: 20px !important; */
   }
   
   .title-alt {
