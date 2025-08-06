@@ -13,7 +13,7 @@ hero:
     - theme: brand
       text: Back Home
       link: /index
-    - theme: alt
+    - theme: sponsor
       text: Contact
       link: /contact
 ---

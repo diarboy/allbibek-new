@@ -54,7 +54,7 @@
         :disabled="currentPage === 1"
         @click="goToPage(currentPage - 1)"
       >
-        ← Prev
+      <Icon icon="grommet-icons:form-previous" class="icon" />
       </button>
 
       <button
@@ -70,7 +70,7 @@
         :disabled="currentPage === totalPages"
         @click="goToPage(currentPage + 1)"
       >
-        Next →
+      <Icon icon="grommet-icons:form-next" class="icon" />
       </button>
     </div>
 
@@ -193,7 +193,7 @@ function filterPosts(tag: string) {
 
 .post-card:hover {
   transform: scale(1.03);
-  filter: brightness(1.3);
+  filter: brightness(1.1);
 }
 
 .icon {
@@ -206,7 +206,7 @@ function filterPosts(tag: string) {
 
 .post-card:hover .icon {
   transform: scale(1.5);
-  color: var(--vp-c-sponsor);
+  color: #8DFF30;
 }
 
 .post-card::before {
@@ -235,6 +235,16 @@ function filterPosts(tag: string) {
   font-family: 'Manrope', sans-serif;
   font-weight: 300;
   }
+
+@media (max-width: 768px) {
+  .post-card h3 a {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    }
+  .post-card p {
+    padding-right: 1rem;
+    }
+}
 
 .post-card p {
   color: #fff;
@@ -288,7 +298,7 @@ function filterPosts(tag: string) {
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border-radius: 0.75rem;
+  border-radius: 2rem;
   cursor: pointer;
   transition: background 0.2s;
 }

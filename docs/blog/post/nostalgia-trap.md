@@ -23,6 +23,8 @@ import SocialShare from '../../.vitepress/theme/components/SocialShare.vue';
 Nostalgia telah menjadi bagian tak terpisahkan dari kehidupan kita sehari-hari. Kita sering terjebak dalam kenangan masa lalu, mengidealkan momen-momen yang telah berlalu, dan merasa bahwa kehidupan terbaik kita berada di belakang, bukan di depan. Fenomena ini begitu umum hingga hampir dianggap wajar, bahkan romantis.
 Namun, ketika kecenderungan untuk hidup dalam kenangan menjadi pola yang berulang dan mendominasi. *Mengapa seseorang memilih untuk terus-menerus kembali ke masa lalu? Apa yang sebenarnya dicari dalam pengulangan kerinduan tersebut?*
 
+![Photo of mountain range under clear sky](https://images.unsplash.com/photo-1501082183835-b7b33db89c3f?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#full)
+
 > ***Apakah mungkin orang yang terus-menerus merindukan masa lalu sebenarnya sedang mencintai lukanya sendiri?***
 
 *Sigmund Freud*, melalui teori-teorinya tentang melankolia, fiksasi, dan konsep secondary gain, memberikan perspektif yang menarik untuk memahami dinamika psikologis di balik nostalgia yang berlebihan. Meskipun Freud tidak secara eksplisit membahas nostalgia sebagai fenomena tersendiri, analisisnya tentang bagaimana individu dapat mempertahankan penderitaan karena memberikan keuntungan psikologis tertentu sangat relevan untuk memahami **Nostalgia Trap**.
