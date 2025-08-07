@@ -146,7 +146,7 @@
         font-family: 'Inter', sans-serif;
       }
 
-      .blog-content p {
+      /* .blog-content p {
         text-align: justify;
         text-justify: inter-word;
         hyphens: auto;
@@ -159,7 +159,7 @@
         text-justify: inter-word;
         hyphens: auto;
         line-height: 1.8;
-      }
+      } */
       
       .blog-content h2,
       .blog-content h3 {
